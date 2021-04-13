@@ -1,0 +1,16 @@
+include ../../sys/pug/vars
+
+.modal.--sm.--black#modal-contest
+	.modal__close.popup-btn-close
+		<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+	.modal__wrap.participate
+		.participate__form.row
+			.participate__input.input.--b-white.--c-white.--xlg.--fz-md
+				.input__wrap
+					input.input__area(type="text" name="" placeholder="Ваш прогноз")
+			.participate__input.input.--b-white.--c-white.--xlg.--fz-md.--required
+				.input__wrap
+					input.input__area(type="text" name="" placeholder="Код участника*")
+			.participate__btn.btn.--bg-yellow.--sm.--bb.--radius принять участие
+
+		.participate__link * код участника находится в #[a(href="https://my.govpsfx.com/competition-code" target="_blank") личном кабинете]

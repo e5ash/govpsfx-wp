@@ -1,0 +1,88 @@
+@import ../../sys/sass/vars
+
+.contacts
+	width: 100%
+	max-width: 970px
+	margin-left: auto
+	margin-right: auto
+	&__col
+		display: flex
+		flex-direction: column
+		&.--md
+			width: 75%
+		&.--sm
+			width: 25%
+		&.--lg
+			width: 100%
+	&__list
+		margin-left: -10px
+		margin-right: -10px
+		margin-bottom: -40px
+		justify-content: space-between
+	&__item
+		margin-left: 10px
+		margin-right: 10px
+		margin-bottom: 40px
+	&__title
+		margin-bottom: 21px
+	&__wrap
+		p
+			margin-bottom: 18px
+			&:last-of-type
+				margin-bottom: 0
+		a
+			&[href*="mailto:"]
+				font-weight: 500 !important
+			&[href*="tel:"]
+				color: #fff
+		.jivo-show
+			text-transform: uppercase
+	&__socials
+		display: flex
+		margin-left: auto
+		padding-top: 10px
+		.socials
+			&__list
+				flex-direction: column
+			&__item
+				margin-bottom: 40px
+				&:last-of-type
+					margin-bottom: 0
+		
+@media screen and (max-width: 992px)
+	.contacts
+		&__col
+			&.--md
+				width: 100%
+			&.--sm
+				width: 100%
+		&__socials
+			margin-left: 0
+			margin-right: auto
+		
+@media screen and (max-width: 767px)
+	.contacts
+		margin-bottom: 60px
+		&__wrap
+			p
+				margin-bottom: 0
+		&__list
+			margin-left: 0
+			margin-right: 0
+			margin-bottom: 0
+			flex-direction: column
+			align-items: center
+			text-align: center
+		&__item
+			margin-left: 0
+			margin-right: 0
+		&__title
+			font-size: 28px
+			line-height: 40px
+		&__socials
+			padding-top: 0
+			.socials
+				&__item
+					margin-bottom: 28px
+				&__name
+					display: block

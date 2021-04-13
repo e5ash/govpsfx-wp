@@ -1,0 +1,693 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: govpsfx\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 08:59+0000\n"
+"PO-Revision-Date: 2021-04-13 09:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: govpsfx"
+
+#. Name of the template
+msgid ""
+msgstr ""
+
+#: 404.php:17
+msgid "404"
+msgstr ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Name of the theme
+msgid "govpsfx"
+msgstr ""
+
+#. URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: single-advisers.php:58
+msgid "Time-frame"
+msgstr ""
+
+#. Author of the theme
+msgid "Underscores.me"
+msgstr ""
+
+#: parts/price-item.php:7
+msgid "USD/МЕСЯЦ"
+msgstr ""
+
+#. Name of the template
+msgid "VPS"
+msgstr ""
+
+#. Name of the template
+msgid "VPS справочник"
+msgstr ""
+
+#. Name of the template
+msgid "VPS что такое"
+msgstr ""
+
+#. Name of the template
+msgid "Аналитика и новости"
+msgstr ""
+
+#: archive-advisers.php:105
+msgid "БЕЗ СКИДКИ"
+msgstr ""
+
+#. Name of the template
+msgid "Блоки - ссылки"
+msgstr ""
+
+#: archive-rebate_service.php:37 archive-brokers.php:90 archive-brokers.php:174
+msgid "Брокер"
+msgstr ""
+
+#: parts/footer.php:62
+msgid "Брокерам"
+msgstr ""
+
+#: tpl_contacts.php:26
+msgid "Брокерам:"
+msgstr ""
+
+#: archive-glossary.php:19
+msgid "Глоссарий форекс терминов"
+msgstr ""
+
+#: archive-advisers.php:72 archive-advisers.php:140
+msgid "Динамика"
+msgstr ""
+
+#: tpl_contest.php:47
+msgid "Для участия в конкурсе осталось времени"
+msgstr ""
+
+#: single.php:91
+msgid "Добавить сайт в закладки"
+msgstr ""
+
+#: single.php:99
+msgid "Добавление в закладки"
+msgstr ""
+
+#: archive-brokers.php:220
+msgid "Доход"
+msgstr ""
+
+#: single-brokers.php:133
+msgid "ЗАКЛЮЧЕНИЕ"
+msgstr ""
+
+#: parts/ping.php:33
+msgid "Загрузка"
+msgstr ""
+
+#: header.php:89
+msgid "Закрыть"
+msgstr ""
+
+#. Name of the template
+msgid "Категории"
+msgstr ""
+
+#. Name of the template
+msgid "Категории без вкладок"
+msgstr ""
+
+#. Name of the template
+msgid "Категории с вкладками"
+msgstr ""
+
+#: parts/price-item.php:28
+msgid "Кол-во терминалов"
+msgstr ""
+
+#: archive-brokers.php:260
+msgid "Кол-во. Пар"
+msgstr ""
+
+#. Name of the template
+msgid "Конкурс"
+msgstr ""
+
+#. Name of the template
+msgid "Конкурс - победители"
+msgstr ""
+
+#. Name of the template
+msgid "Конкурс - правила"
+msgstr ""
+
+#. Name of the template
+msgid "Конкурс - участники"
+msgstr ""
+
+#. Name of the template
+msgid "Контакты"
+msgstr ""
+
+#: archive-rebate_service.php:71 archive-brokers.php:124
+msgid "Кред. плечо"
+msgstr ""
+
+#: single-advisers.php:65 archive-brokers.php:45
+msgid "Кредитное плечо"
+msgstr ""
+
+#: archive-brokers.php:246
+msgid "Криптобиржа"
+msgstr ""
+
+#: single-advisers.php:26 single-advisers.php:121 parts/modals.php:10
+msgid "Купить советник"
+msgstr ""
+
+#: single.php:30
+msgid "Курсы валют"
+msgstr ""
+
+#: parts/price-item.php:36
+msgid "Локация серверов"
+msgstr ""
+
+#: archive-advisers.php:82 archive-advisers.php:150
+msgid "Мин."
+msgstr ""
+
+#: archive-rebate_service.php:60 archive-brokers.php:113
+#: archive-brokers.php:197
+msgid "Мин. депозит"
+msgstr ""
+
+#: archive-rebate_service.php:83 archive-brokers.php:136
+msgid "Мин. лот"
+msgstr ""
+
+#: archive-rebate_service.php:95 archive-brokers.php:148
+msgid "Мин. спред"
+msgstr ""
+
+#: archive-brokers.php:41
+msgid "Минимальный депозит"
+msgstr ""
+
+#: archive-brokers.php:49
+msgid "Минимальный спред"
+msgstr ""
+
+#: parts/popular-item.php:16
+msgid "Мониториг счёта"
+msgstr ""
+
+#: single.php:43
+msgid "Мы в соц. сетях"
+msgstr ""
+
+#: header.php:123 parts/footer.php:49
+msgid "Мы в соцсетях"
+msgstr ""
+
+#: archive-advisers.php:59 archive-advisers.php:127
+msgid "НАИМЕНОВАНИЕ"
+msgstr ""
+
+#: 404.php:19
+msgid "На главную"
+msgstr ""
+
+#: single.php:100
+msgid "Нажмите \"CTRL + D\" для добавления страницы в закладки"
+msgstr ""
+
+#: parts/modals.php:36
+msgid "Напишите нам, поможем"
+msgstr ""
+
+#: header.php:144
+msgid "Напишите что ищите"
+msgstr ""
+
+#: parts/popular-item.php:12
+msgid "Начальный депозит"
+msgstr ""
+
+#: search-all.php:39
+msgid "Ничего не найдено"
+msgstr ""
+
+#: parts/price-item.php:24
+msgid "ОС"
+msgstr ""
+
+#: parts/broker-tr-forex.php:15
+msgid "Обзор и отзывы"
+msgstr ""
+
+#: single-brokers.php:153
+msgid "Обзоры форекс брокеров"
+msgstr ""
+
+#: header.php:104
+msgid "Обучающие курсы"
+msgstr ""
+
+#. Name of the template
+msgid "Обучение"
+msgstr ""
+
+#: archive-advisers.php:69 archive-advisers.php:137
+msgid "Общая"
+msgstr ""
+
+#: parts/popular-item.php:8
+msgid "Общая доходность:"
+msgstr ""
+
+#: archive-brokers.php:259
+msgid "Объем/День"
+msgstr ""
+
+#: parts/price-item.php:16
+msgid "Опер. память"
+msgstr ""
+
+#: archive-rebate_service.php:47 archive-brokers.php:100
+#: archive-brokers.php:184
+msgid "Основан"
+msgstr ""
+
+#: archive-brokers.php:256
+msgid "Основана"
+msgstr ""
+
+#: parts/broker-tr-binary.php:13 parts/broker-tr-crypto.php:13
+msgid "Основы торговли"
+msgstr ""
+
+#: single-brokers.php:195
+msgid "Оставьте свой комментарий"
+msgstr ""
+
+#: header.php:111 single-rebate_service.php:23
+msgid "Остались вопросы?"
+msgstr ""
+
+#: archive-advisers.php:94 archive-advisers.php:162
+msgid "Оценка"
+msgstr ""
+
+#: parts/search-item.php:10
+msgid "ПОДРОБНЕЕ"
+msgstr ""
+
+#: single-brokers.php:109
+msgid "ПРЕИМУЩЕСТВА И НЕДОСТАТКИ КОМПАНИИ"
+msgstr ""
+
+#: single-advisers.php:141
+msgid "Перейти"
+msgstr ""
+
+#: header.php:120
+msgid "Пишите, ждём"
+msgstr ""
+
+#: tpl_contest.php:115
+msgid "Победители прошлых конкурсов"
+msgstr ""
+
+#: tpl_contacts.php:18 header.php:47 header.php:108 parts/footer.php:56
+msgid "Поддержка 24/7"
+msgstr ""
+
+#: parts/share.php:8
+msgid "Поделиться ссылкой"
+msgstr ""
+
+#: single.php:53
+msgid "Подписаться на новости"
+msgstr ""
+
+#: parts/footer.php:16
+msgid "Подписаться на рейтинг советников"
+msgstr ""
+
+#: archive-glossary.php:41 search-glossary.php:43
+msgid "Поиск по букве"
+msgstr ""
+
+#: archive-rebate_service.php:31 archive-brokers.php:37 archive-brokers.php:168
+#: archive-brokers.php:241
+msgid "Поиск по названию брокера..."
+msgstr ""
+
+#: search-all.php:20 search-glossary.php:22
+msgid "Поиск по сайту"
+msgstr ""
+
+#: archive-glossary.php:25 search-glossary.php:28
+msgid "Поиск по слову"
+msgstr ""
+
+#: single-glossary.php:44
+msgid "Пока здесь нет терминов, но мы над этим работаем"
+msgstr ""
+
+#: archive-brokers.php:82
+msgid "Показать"
+msgstr ""
+
+#: parts/expert-tr.php:49 parts/modals.php:23
+msgid "Получить бесплатно"
+msgstr ""
+
+#: single-advisers.php:31
+msgid "Получить бесплатный VPS"
+msgstr ""
+
+#: parts/expert-tr-free.php:46
+msgid "Получить советник"
+msgstr ""
+
+#: single-advisers.php:24 single-advisers.php:118
+msgid "Получить советник бесплатно"
+msgstr ""
+
+#: single-advisers.php:140
+msgid "Похожие советники"
+msgstr ""
+
+#: single-rebate_service.php:26
+msgid "Почитайте наши статьи:"
+msgstr ""
+
+#: tpl_contest.php:25
+msgid "Правила участия в конкурсе"
+msgstr ""
+
+#: parts/price-item.php:12
+msgid "Процессор"
+msgstr ""
+
+#: parts/rebate-tr-forex.php:15
+msgid "Расчет рибейта"
+msgstr ""
+
+#: archive-rebate_service.php:50 archive-brokers.php:103
+#: archive-brokers.php:187
+msgid "Регулятор"
+msgstr ""
+
+#: parts/footer.php:64
+msgid "Реклама"
+msgstr ""
+
+#: tpl_contacts.php:32
+msgid "Реклама:"
+msgstr ""
+
+#: single-advisers.php:72
+msgid "Рекомендуемые брокеры"
+msgstr ""
+
+#: single-advisers.php:94
+msgid "Рекомендуемый VPS"
+msgstr ""
+
+#: single-advisers.php:87
+msgid "Рекомендуемый депозит"
+msgstr ""
+
+#: archive-advisers.php:59 archive-advisers.php:127
+msgid "СОВЕТНИКА"
+msgstr ""
+
+#: archive-advisers.php:105
+msgid "СТОИМОСТЬ"
+msgstr ""
+
+#: archive-brokers.php:83
+msgid "Сбросить"
+msgstr ""
+
+#: archive-brokers.php:208
+msgid "Ставка"
+msgstr ""
+
+#: single-advisers.php:18
+msgid "Стоимость"
+msgstr ""
+
+#: archive-rebate_service.php:98 archive-brokers.php:151
+msgid "ТЕРМИНАЛ"
+msgstr ""
+
+#: 404.php:18
+msgid "Такой страницы не существует"
+msgstr ""
+
+#: parts/price-item.php:2
+msgid "Тариф:"
+msgstr ""
+
+#. Name of the template
+msgid "Тарифы"
+msgstr ""
+
+#: single-glossary.php:13
+msgid "Термины на эту же букву"
+msgstr ""
+
+#: archive-brokers.php:261
+msgid "Торг.Комиссия"
+msgstr ""
+
+#: single-advisers.php:44 archive-brokers.php:53
+msgid "Торговый терминал"
+msgstr ""
+
+#: single-advisers.php:51
+msgid "Торгуемые пары"
+msgstr ""
+
+#: parts/price-item.php:32
+msgid "Трафик"
+msgstr ""
+
+#: tpl_contest-members.php:16 tpl_contest-winners.php:25
+msgid "Участники розыгрыша"
+msgstr ""
+
+#: archive-brokers.php:262
+msgid "ФИАТ"
+msgstr ""
+
+#: header.php:119
+msgid "Хотите с нами работать?"
+msgstr ""
+
+#: parts/questions.php:5 parts/questions.php:20
+msgid "Часто задаваемые вопросы по бесплатным серверам"
+msgstr ""
+
+#: tpl_category-without-tabs.php:124 single-bonuses.php:26
+#: tpl_category-with-tabs.php:133
+msgid "Читайте следующую статью:"
+msgstr ""
+
+#: archive-advisers.php:20
+msgid "Читайте статью:"
+msgstr ""
+
+#: single-brokers.php:23
+msgid "адрес сайта"
+msgstr ""
+
+#: parts/price-item.php:41
+msgid "арендовать"
+msgstr ""
+
+#: tpl_vps.php:19 tpl_vps-what.php:19
+msgid "бесплатный vps"
+msgstr ""
+
+#: single-brokers.php:51
+msgid "валюта депозита"
+msgstr ""
+
+#: tpl_news.php:40
+msgid "все"
+msgstr ""
+
+#: single-brokers.php:16
+msgid "год основания"
+msgstr ""
+
+#: archive-advisers.php:82 archive-advisers.php:150
+msgid "депозит"
+msgstr ""
+
+#: parts/rebate-tr-forex.php:8 parts/broker-tr-forex.php:8
+msgid "до"
+msgstr ""
+
+#: archive-advisers.php:69 archive-advisers.php:137
+msgid "доходность"
+msgstr ""
+
+#: archive-advisers.php:72 archive-advisers.php:140
+msgid "за месяц"
+msgstr ""
+
+#: single-rebate_service.php:34
+msgid "или"
+msgstr ""
+
+#: single-brokers.php:79
+msgid "инвестиционный сервис"
+msgstr ""
+
+#: single-brokers.php:72
+msgid "криптовалюта"
+msgstr ""
+
+#: header.php:73
+msgid "меню"
+msgstr ""
+
+#: single-brokers.php:44
+msgid "минимальный депозит"
+msgstr ""
+
+#: tpl_contest.php:79
+msgid "минуты"
+msgstr ""
+
+#: parts/footer.php:80
+msgid "наверх"
+msgstr ""
+
+#: tpl_contacts.php:53
+msgid "написать нам"
+msgstr ""
+
+#: single-rebate_service.php:35
+msgid "напишите нам, поможем"
+msgstr ""
+
+#: parts/price-item.php:5
+msgid "начиная от:"
+msgstr ""
+
+#: parts/price-item.php:20
+msgid "обьем диска"
+msgstr ""
+
+#: single-advisers.php:19
+msgid "одна лицензия"
+msgstr ""
+
+#: single-advisers.php:66 parts/rebate-tr-forex.php:10
+#: parts/broker-tr-forex.php:10
+msgid "от"
+msgstr ""
+
+#: parts/rebate-tr-forex.php:16 parts/broker-tr-binary.php:12
+#: parts/broker-tr-crypto.php:12 parts/broker-tr-forex.php:14
+msgid "открыть счёт"
+msgstr ""
+
+#: single-brokers.php:173
+msgid "перейти к форекс брокерам"
+msgstr ""
+
+#: tpl_contacts.php:22 parts/footer.php:60
+msgid "поддержка в чате"
+msgstr ""
+
+#: tpl_category-without-tabs.php:62 archive-bonuses.php:35
+#: tpl_category-with-tabs.php:72 parts/combo-offer.php:20
+msgid "подробности"
+msgstr ""
+
+#: tpl_vps.php:19 tpl_vps-what.php:19
+msgid "получить"
+msgstr ""
+
+#: parts/popular-item.php:26
+msgid "получить бесплатно"
+msgstr ""
+
+#: parts/popular-item.php:27
+msgid "посмотреть стратегию"
+msgstr ""
+
+#: parts/rebate-tr-forex.php:10 parts/broker-tr-forex.php:10
+msgid "пп"
+msgstr ""
+
+#: single-brokers.php:30
+msgid "регулятор"
+msgstr ""
+
+#: tpl_contest.php:95
+msgid "секунды"
+msgstr ""
+
+#: tpl_contest.php:99
+msgid "список участников"
+msgstr ""
+
+#: single-brokers.php:65
+msgid "средняя комиссия на вывод"
+msgstr ""
+
+#: single-brokers.php:58
+msgid "средняя комиссия на пополнение"
+msgstr ""
+
+#: single-brokers.php:37
+msgid "страна регистрации"
+msgstr ""
+
+#: archive-advisers.php:94 archive-advisers.php:162
+msgid "трейдеров"
+msgstr ""
+
+#: tpl_contest-members.php:23 tpl_contest-rules.php:23 tpl_contest.php:21
+#: tpl_contest.php:100 tpl_contest-winners.php:32
+msgid "участвовать в конкурсе"
+msgstr ""
+
+#: tpl_contest.php:63
+msgid "часы"
+msgstr ""

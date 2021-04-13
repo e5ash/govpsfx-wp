@@ -1,0 +1,73 @@
+@import ../../sys/sass/vars
+
+.test
+	padding-top: 48px
+	padding-bottom: 50px
+	margin-bottom: 65px
+	&:before
+		z-index: -2
+		content: ''
+		position: absolute
+		top: 0
+		left: -2000%
+		right: -2000%
+		bottom: 0
+		background-color: rgba(24, 26, 27, 0.69)
+	&__content
+		z-index: 1
+		position: relative
+		display: flex
+		flex-direction: column
+		width: 100%
+		max-width: 655px
+	&__title
+		margin-bottom: 20px
+	&__btn
+		margin-top: 22px
+		margin-right: auto
+		&.btn
+			padding-left: 31px
+			padding-right: 31px
+	&__img
+		position: absolute
+		top: -50px
+		right: -250px
+	&__bg-1
+		left: 50%
+		transform: translateX(-50%)
+		margin-left: -650px
+		top: 0
+	&__bg-2
+		right: 50%
+		transform: translateX(50%)
+		margin-right: -650px
+		bottom: 0
+		
+
+@media screen and (max-width: 1220px)
+	// .test
+		
+@media screen and (max-width: 992px)
+	.test
+		&__content
+			max-width: 365px
+		
+@media screen and (max-width: 767px)
+	.test
+		padding-top: 20px
+		padding-bottom: 10px
+		&:before
+			display: none
+		&__content
+			max-width: 100%
+		&__title
+			font-size: 24px
+			line-height: 32px
+		&__btn
+			margin-left: auto
+			margin-top: 14px
+		&__img-wrap
+			display: none
+			
+			
+		

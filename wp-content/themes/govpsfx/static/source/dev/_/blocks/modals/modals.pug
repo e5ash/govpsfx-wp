@@ -1,0 +1,36 @@
+include ../../sys/pug/vars
+
+.modals
+	.modal.--xs#modal-buy
+		.modal__close.popup-btn-close
+			<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+		.modal__wrap
+			.modal__title Купить советник
+			.modal__form
+				.modal__input.input.--b-gray.--xlg.--c-gray.--email
+					.input__wrap
+						input.input__area(type="text" name="" placeholder="Введите email")
+				.modal__input.input.--b-gray.--xlg.--c-gray
+					.input__wrap
+						input.input__area(type="text" name="" placeholder="Номер счета")
+				.modal__input.input.--b-gray.--xlg.--c-gray
+					.input__wrap
+						input.input__area(type="text" name="" placeholder="Имя брокера")
+				button.modal__btn.btn.--bg-yellow.--sm.--bb.--radius Отправить
+
+	.modal.--xs#modal-get-free
+		.modal__close.popup-btn-close
+			<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+		.modal__wrap
+			.modal__title Получить бесплатно
+			.modal__form
+				.modal__input.input.--b-gray.--xlg.--c-gray.--email
+					.input__wrap
+						input.input__area(type="text" name="" placeholder="Введите email")
+				.modal__input.input.--b-gray.--xlg.--c-gray
+					.input__wrap
+						input.input__area(type="text" name="" placeholder="Номер счета")
+				.modal__input.input.--b-gray.--xlg.--c-gray
+					.input__wrap
+						input.input__area(type="text" name="" placeholder="Имя брокера")
+				button.modal__btn.btn.--bg-yellow.--sm.--bb.--radius Отправить

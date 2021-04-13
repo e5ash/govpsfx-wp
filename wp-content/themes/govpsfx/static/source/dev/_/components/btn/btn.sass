@@ -1,0 +1,92 @@
+@import ../../sys/sass/vars
+
+.btn
+	z-index: 1
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	cursor: pointer
+	font-size: $fzMain
+	font-family: $ffMain
+	overflow: hidden
+	border: none
+	background-color: transparent
+	transition: .3s
+	outline: none
+	border-bottom: none
+	text-transform: uppercase
+	svg + span
+		margin-left: 7px
+	span + svg
+		margin-left: 7px
+	&.--sm
+		font-size: 14px
+		font-weight: 700
+		letter-spacing: 1px
+		min-height: 48px
+		padding-left: 22px
+		padding-right: 22px
+	&.--lg
+		font-size: 14px
+		font-weight: 700
+		letter-spacing: 1px
+		min-height: 61px
+		padding-left: 22px
+		padding-right: 22px
+	
+	&.--xlg
+		min-height: 82px
+		padding: 16px 22px 19px 22px
+		text-align: left
+	&.--more
+		justify-content: flex-start
+		text-transform: none
+		.btn
+			&__title
+				font-size: 16px
+				line-height: 26px
+				color: #fff
+			&__desc
+				font-size: 14px
+				line-height: 18px
+				letter-spacing: 1px
+				font-weight: 700
+				text-transform: uppercase
+			&__icon
+				margin-left: 25px
+	&.--bg-yellow
+		color: $black
+		background-color: $yellow
+		&:hover
+			background-color: $yellow-l
+	&.--b-yellow
+		color: $yellow
+		border: 1px solid $yellow
+		&:hover
+			color: $yellow-l
+			border-color: $yellow-l
+	&.--b-white
+		color: #fff
+		border: 1px solid #fff
+		&:hover
+			color: $yellow-l
+			border-color: $yellow-l
+	&.--bb
+		box-shadow: 0 10px 24px rgba(255,184,0,.3),0 4px 0 #d09600
+	&.--h-icon-yellow
+		&:hover
+			path
+				&[fill]
+					fill: $yellow-l
+	&.--radius
+		border-radius: 5px
+		
+		
+@media screen and (max-width: 767px)
+	.btn
+		&.--more
+			.btn
+				&__desc
+					font-size: 11px

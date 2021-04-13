@@ -1,0 +1,406 @@
+@import ../../sys/sass/vars
+
+.panel
+	padding-top: 19.5px
+	padding-bottom: 19.5px
+	background-color: #1E2022
+	&__wrap
+		align-items: center
+
+	&__logo
+		margin-left: 14px
+		margin-right: 68px
+		margin-bottom: 5px
+
+	&__links
+		margin-left: auto
+		margin-right: 34px
+	&__lang
+		width: 55px
+		height: 50px
+	&__search
+		margin-left: 33px
+
+
+.header
+	z-index: 100
+	position: relative
+	&__nav-wrap
+		z-index: 10
+		background-color: rgba(22,24,25,.7)
+		.case
+			align-items: center
+	&__nav
+		padding-left: 36px
+		li
+			margin-right: 64px
+			&:nth-last-of-type(3)
+				margin-right: 0
+			&:nth-last-of-type(1), &:nth-last-of-type(2)
+				display: none
+			&.current-menu-item
+				a
+					color: $yellow-l
+
+.search
+	z-index: 30
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: #161819
+	box-shadow: 0 4px 14px rgba(0,0,0,.3)
+	transition: .3s
+	transform: translateY(-100%)
+	.case
+		align-items: center
+		padding-right: 100px
+	&__wrap
+		position: relative
+		width: 100%
+		margin-left: auto
+		margin-right: auto
+		max-width: 830px
+		border-bottom: 1px solid $yellow
+	.input
+		&__area
+			font-size: 19px
+			padding: 9px 0 12px 65px  !important
+		&__icon
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+	&.--show
+		transform: translateY(0%)
+
+	&__close
+		&:hover
+			path
+				&[fill="#FFB800"]
+					fill: $yellow-l
+.ham
+	padding: 18.5px 24px 18.5px 24px
+	&__icon
+		display: flex
+		flex-direction: column
+		div
+			width: 29px
+			height: 3px
+			background-color: $black
+			margin-bottom: 6px
+			&:last-of-type
+				margin-bottom: 0
+
+	&__title
+		font-size: 14px
+		margin-left: 19px
+		font-weight: 600
+		text-transform: uppercase
+
+
+.p-contact
+	&__title
+		margin-bottom: 4px
+	&__item
+		font-size: 14px
+		margin-right: 38px
+		letter-spacing: 1px
+		&:last-of-type
+			margin-right: 0
+
+.nav
+	z-index: 900
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 30px
+	overflow-y: auto
+	transition: .3s
+	transform: translateY(-100%)
+	background-color: #1b1d1f
+	&.--show
+		transform: translateY(0%)
+	&__close
+		display: flex
+		cursor: pointer
+		&-title
+			font-size: 14px
+			font-weight: 600
+			text-transform: uppercase
+			padding-left: 12px
+			transition: .3s
+		&:hover
+			.nav
+				&__close
+					&-icon
+						path
+							&[fill="#FFB800"]
+								fill: $yellow-l
+					&-title
+						color: $yellow-l
+	&__logo
+		margin-left: auto
+	&__head
+		padding-left: 42px
+		padding-right: 42px
+	&__body
+		margin-top: 134px
+		padding-left: 432px
+		margin-right: -30px
+		&-col
+			// width: 100%
+			&:nth-of-type(1)
+				max-width: 310px
+			&:nth-of-type(2)
+				max-width: 435px
+				margin-top: -6px
+				margin-left: 160px
+	&__title
+		margin-top: 30px
+		margin-bottom: 18px
+		&:first-of-type
+			margin-top: 0
+		
+	&__email, &__phone
+		font-size: 14px
+		letter-spacing: 1px
+		text-transform: uppercase
+		a
+			color: #fff
+			&:hover
+				color: $yellow-l
+	&__email
+		margin-bottom: 16px
+
+	&__write
+		padding-top: 8px
+	&__socials
+		padding-top: 8px
+		.socials
+			&__item
+				margin-right: 40px
+				&:last-of-type
+					margin-right: 0
+	&__foot
+		margin-top: 104px
+		padding-left: 432px
+		&-col
+			padding-right: 92px
+			&:last-of-type
+				padding-right: 0
+	&__scheme
+		&-1
+			left: -110px
+			bottom: 0
+		&-2
+			right: 263px
+			top: 0
+
+		
+
+@media screen and (max-width: 1360px)
+	.panel
+		&__logo
+			margin-left: 0
+			
+	.nav
+		&__body
+			padding-left: 170px
+		&__foot
+			padding-left: 42px
+			padding-right: 42px
+			padding-bottom: 20px
+
+
+@media screen and (max-width: 1340px)
+	// .header
+		
+	.panel
+		padding-top: 22px
+		padding-bottom: 22px
+		&__logo
+			margin-bottom: 0
+	.p-contact
+		&__title
+			margin-bottom: 3px
+		&__list
+			flex-direction: column
+		&__item
+			margin-right: 0
+			margin-bottom: 4px
+			&:last-of-type
+				margin-bottom: 0
+
+	.search
+		.case
+			max-width: 100%
+			padding-left: 42px
+			padding-right: 42px
+		&__wrap
+			max-width: calc(100% - 53px - 100px)
+			margin-right: auto
+
+@media screen and (max-width: 1110px)
+	.nav
+		&__body
+			justify-content: center
+			padding-left: 0
+			&-col
+				&:nth-of-type(2)
+					margin-left: 0
+@media screen and (max-width: 992px)
+	.panel
+		&__logo
+			margin-right: 40px
+			&.logo
+				width: 120px
+		&__links
+			a
+				font-size: 10px
+
+	.ham
+		&__title
+			font-size: 10px
+
+	.header
+		&__nav
+			li
+				margin-right: 50px
+				&:last-of-type
+					margin-right: 0
+			a
+				font-size: 10px
+			
+		
+@media screen and (max-width: 767px)
+	.header
+		&__ham
+			padding-left: 0
+			padding-right: 0
+			width: 120px
+		&__nav
+			width: calc(100% - 120px)
+			ul
+				flex-direction: column
+				align-items: flex-end
+			li
+				display: none
+				margin-right: 0
+				&:nth-last-of-type(1), &:nth-last-of-type(2)
+					display: block
+			a
+				font-size: 11px
+	.panel
+		padding-top: 10px
+		padding-bottom: 10px
+		&__contact
+			display: none
+		&__links
+			display: none
+		&__lang
+			margin-left: auto
+			
+	.ham
+		&__title
+			font-size: 13px
+			margin-left: 13px
+	.nav
+		&__logo
+			max-width: 150px
+		&__head
+			padding-left: 0
+			padding-right: 0
+		&__body
+			text-align: center
+			margin-top: 65px
+			margin-right: 0
+			&-col
+				width: 100%
+				max-width: 100% !important
+				margin-bottom: 50px
+				&:last-of-type
+					margin-bottom: 0
+		&__list
+			a
+				&:after
+					display: none
+		&__title
+			margin-top: 36px
+
+		&__foot
+			margin-top: 40px
+			padding-left: 0
+			padding-right: 0
+			align-items: center
+			text-align: center
+			flex-direction: column
+			&-col
+				padding-right: 0
+				margin-bottom: 30px
+
+		&__write
+			padding-top: 0
+			// margin-top: -4px
+			
+		&__socials
+			padding-top: 0
+			
+		&__scheme
+			&-1
+				top: 200px
+
+	.search
+		padding-top: 22px
+		padding-bottom: 22px
+		.case
+			padding-left: 15px
+			padding-right: 15px
+		&__close
+			order: 2
+		&__wrap
+			order: 1
+			max-width: calc(100% - 53px - 15px)
+			margin-right: 15px
+		.input
+			&__icon
+				left: 14px
+			
+
+@media screen and (max-width: 540px)
+	.nav
+		&__close
+			&-icon
+				width: 40px
+				svg
+					width: 100%
+					height: 100%
+			&-title
+				font-size: 11px
+
+		&__scheme
+			&-1
+				// display: none
+				width: 426px
+				height: 584px
+				img
+					width: auto
+					object-fit: none
+			&-2
+				left: -100px
+				right: auto
+			
+		&__title
+			font-size: 20px
+			line-height: 21px
+			
+@media screen and (max-width: 360px)
+	.nav
+		&__head
+			align-items: center
+		&__logo
+			width: 100px

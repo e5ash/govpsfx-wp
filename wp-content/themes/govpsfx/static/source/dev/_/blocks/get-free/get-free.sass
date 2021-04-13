@@ -1,0 +1,44 @@
+@import ../../sys/sass/vars
+
+.get-free
+	margin-top: 60px
+	max-width: 750px
+	&__list
+		&.--mt-m
+			margin-top: -10px
+	&__item
+		position: relative
+		padding-top: 70px
+		margin-bottom: 40px
+		&:last-of-type
+			margin-bottom: 0
+	&__count
+		font-size: 140px
+		line-height: 140px
+		opacity: 0.1
+		font-weight: 600
+		color: #ffb800
+		position: absolute
+		z-index: -1
+		top: 0px
+		left: -50px
+	&__text
+		font-size: 24px
+		line-height: 32px
+		font-weight: 600
+		
+
+@media screen and (max-width: 1220px)
+	// .get-free
+		
+@media screen and (max-width: 992px)
+	// .get-free
+		
+@media screen and (max-width: 767px)
+	.get-free
+		&__item
+			padding-left: 20px
+		&__count
+			left: -30px
+			
+		

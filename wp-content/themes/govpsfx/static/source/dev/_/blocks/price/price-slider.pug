@@ -1,0 +1,60 @@
+include ../../sys/pug/vars
+
+.price__slider.swiper-container.--has-pagination(class=priceSliderClass)
+	.price__list.swiper-wrapper
+		mixin priceItem(name, price, data)
+			.price__item.swiper-slide
+				.price__desc Тариф:
+				.price__name.h4.c-yellow= name
+				.price__wrap.p.row
+					.p__name начиная от:
+					.p__value= price
+					.p__currency USD/МЕСЯЦ
+				if data
+					.price__data.data
+						.data__list
+							each item in data
+								.data__item
+									.data__name= item[0]
+									.data__value= item[1]
+				a.price__btn.btn.--sm.--bg-yellow.--bb.--radius(href="" target="_blank") арендовать
+		-
+			prices = [
+				['Start', '2.28', [
+					['Процессор', '1 CPU 3,0 GHZ'],
+					['Опер. память', 'RAM 1 GB'],
+					['обьем диска', 'SSD 20 GB'],
+					['ОС', 'Windows Server 2012 R2'],
+					['Кол-во терминалов', '1-3 МТ4/МТ5'],
+					['Трафик', 'безлимитный'],
+					['Локация серверов', 'Франция']
+				]],
+				['Classic', '6.00', [
+					['Процессор', '2 CPU 3,0 GHZ'],
+					['Опер. память', 'RAM 2 GB'],
+					['обьем диска', 'SSD 30 GB'],
+					['ОС', 'Windows Server 2012 R2'],
+					['Кол-во терминалов', '2-5 МТ4/МТ5'],
+					['Трафик', 'безлимитный'],
+					['Локация серверов', 'Нидерланды']
+				]],
+				['Expert', '9.48', [
+					['Процессор', '3 CPU 3,0 GHZ'],
+					['Опер. память', 'RAM 3 GB'],
+					['обьем диска', 'SSD 40 GB'],
+					['ОС', 'Windows Server 2012 R2'],
+					['Кол-во терминалов', '4-8 МТ4/МТ5'],
+					['Трафик', 'безлимитный'],
+					['Локация серверов', 'Нидерланды']
+				]],
+			]
+		if prices
+			each price in prices
+				+priceItem(price[0], price[1], price[2])
+
+	.price__pagination.swiper-pagination
+	.price__arrows.arrows
+		.price__arrow.swiper-button-prev.btn.arrow.--bg-yellow.--radius.--prev
+			<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+		.price__arrow.swiper-button-next.btn.arrow.--bg-yellow.--radius.--next
+			<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>

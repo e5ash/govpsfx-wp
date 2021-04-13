@@ -1,0 +1,153 @@
+@import ../../sys/sass/vars
+
+.footer
+	z-index: 1
+	padding-top: 60px
+	padding-bottom: 35px
+	margin-top: auto
+	background-color: #0d0d0a
+	&__wrap
+		justify-content: center
+		margin-left: -10px
+		margin-right: -10px
+	&__col
+		width: calc(33.33% - 20px)
+		margin-left: 10px
+		margin-right: 10px
+		&:nth-of-type(1)
+			padding-left: 100px
+			padding-top: 35px
+		&:nth-of-type(3)
+			padding-left: 80px
+			padding-top: 30px
+	&__scheme
+		&-1
+			top: 34px
+			left: 0
+		&-2
+			top: 320px
+			left: 0
+		&-3
+			right: 0
+			top: 80px
+	&__logo
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 40px
+
+	&__form, &__socials
+		width: 100%
+		max-width: 355px
+		margin-left: auto
+		margin-right: auto
+
+	&__socials
+		margin-top: 10px
+
+	&__title
+		margin-top: 27px
+		margin-bottom: 12px
+		&:first-of-type
+			margin-top: 0
+
+	&__form-title
+		width: 100%
+		max-width: 355px
+		margin-left: auto
+		margin-right: auto
+
+	&__text
+		padding-top: 5px
+		margin-bottom: 38px
+		p
+			margin-bottom: 12px
+			&:last-of-type
+				margin-bottom: 0
+		a
+			color: #fff
+			text-transform: uppercase
+			&[href*='mailto']
+				color: $yellow
+				text-transform: lowercase
+			&:hover
+				color: $yellow-l
+		.openJivo
+			&:hover
+				color: $yellow-l
+				
+	&__copy
+		opacity: 0.3
+		padding-left: 100px
+		padding-top: 70px
+		
+
+.up
+	flex-direction: column
+	z-index: 50
+	width: 72px
+	height: 72px
+	position: fixed
+	right: 117px
+	bottom: 67px
+	background-color: #1e2022
+	opacity: 0
+	visibility: hidden
+	transform: scale(0)
+	&.btn
+		color: #fff
+		text-transform: none
+		&:hover
+			color: #fff
+	&.--show
+		opacity: 1
+		visibility: visible
+		transform: scale(1)
+		
+@media screen and (max-width: 1340px)
+	.footer
+		&__col
+			&:nth-of-type(1)
+				padding-left: 0
+				padding-right: 20px
+
+		&__copy
+			padding-left: 0
+		
+@media screen and (max-width: 992px)
+	.footer
+		&__wrap
+			flex-direction: column
+			text-align: center
+			margin-left: 0
+			margin-right: 0
+		&__col
+			width: 100%
+			padding-left: 0 !important
+			padding-right: 0 !important
+			margin-left: 0
+			margin-right: 0
+			&:nth-of-type(1)
+				order: 2
+			&:nth-of-type(2)
+				order: 1
+			&:nth-of-type(3)
+				order: 3
+		&__logo
+			&.logo
+				// width: 100%
+		&__copy
+			text-align: center
+			padding-left: 0
+			padding-top: 35px
+@media screen and (max-width: 767px)
+	.footer
+		padding-top: 35px
+	.up
+		right: 50%
+		bottom: 45px
+		transform: translateX(50%)
+		&.--show
+			transform: translateX(50%) scale(1)
+
+		

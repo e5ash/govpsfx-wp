@@ -1,0 +1,83 @@
+@import ../../sys/sass/vars
+
+.select
+	z-index: 5
+	position: relative
+	transition: .3s
+	cursor: pointer
+	select
+		display: none
+	&__area
+		display: flex
+		align-items: center
+	&__title
+		width: calc(100% - 15px)
+		white-space: nowrap
+	&__icon
+		width: 15px
+		transition: .3s
+	&__list
+		opacity: 0
+		position: absolute
+		top: calc(100% - 2px)
+		left: -1px
+		right: -1px
+		max-height: 300px
+		overflow-y: auto
+		transition: .3s
+		visibility: hidden
+		// transform: scale(1) translateY(0)
+		transform: scale(.75) translateY(-21px)
+	&__item
+		transition: .3s
+		padding: 9.5px 29px 9.5px 18px
+		&:hover
+			color: $yellow
+			background-color: #424445
+		&.--selected
+			color: $yellow
+			cursor: default
+			background-color: #1e2022
+	&.--md
+		.select
+			&__area
+				height: 45px
+				font-size: 16px
+				border-radius: 5px
+			&__list
+				border-radius: 4px
+			&__item
+				font-size: 16px
+
+	&.--b-yellow
+		.select
+			&__area
+				padding: 0 14px 0 14px
+				border: 1px solid #ffb800
+			&__list
+				margin-top: 4px
+				border: 1px solid #ffb800
+				background-color: #1e2022
+				box-shadow: 0 0 0 1px rgba(68,68,68,.11)
+	&.--line
+		.select
+			&__area
+				position: relative
+				&:before
+					display: block
+					content: ''
+					top: 3px
+					bottom: 3px
+					right: 42px
+					width: 1px
+					position: absolute
+					background-color: $yellow
+	&.--open
+		.select
+			&__icon
+				transform: rotate(180deg)
+			&__list
+				opacity: 1
+				visibility: visible
+				transform: scale(1) translateY(0)
+				

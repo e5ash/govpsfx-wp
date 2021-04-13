@@ -1,0 +1,28 @@
+.participate__form {
+  justify-content: space-between;
+}
+.participate__input {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+.participate__btn, .participate .partbtnblock {
+  width: 100%;
+}
+.participate__link {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #ffb800;
+}
+.participate__link a {
+  font-weight: 400;
+  border-color: #ffb800;
+}
+.participate__link a:hover {
+  border-color: #ffd600;
+}
+
+@media screen and (max-width: 767px) {
+  .participate__input {
+    width: 100%;
+  }
+}

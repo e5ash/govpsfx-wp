@@ -1,0 +1,53 @@
+extends ../../templates/default
+block vars
+	-
+		title = "УГАДАЙ КУРС EURUSD ПРИЗ $250"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page.bg-wrap
+		.case
+			.page__head
+				+breadcrumbs()
+			.page__body
+				.page__wrap.row
+					.page__sidebar(data-sticky-container="")
+						script(src="_/sys/libs/sticky.js/dist/sticky.min.js")
+						.page__sticky
+							.page__nav
+								ul
+									li.--selected
+										a(href="") УГАДАЙ КУРС EURUSD ПРИЗ $250
+
+									li
+										a(href="") Угадай курс GBPUSD приз $100
+
+							.page__grp.grp
+								a.grp__btn.btn.--lg.--b-yellow.--radius(href="#modal-contest" data-popup="") участвовать в конкурсе
+								.grp__link.link.--white #[a(href="") Победители розыгрыша №176]
+								.grp__link.link #[a(href="") Правила участия в конкурсе]
+						script.
+							var sticky = new Sticky('.page__sticky')
+					.page__section
+						.page__title.h1 Форекс конкурс с призовым фондом $250
+						+style('contest', 'blocks')
+						include ../../blocks/contest/contest
+						+script('contest', 'blocks')
+
+						+style('winners', 'blocks')
+						include ../../blocks/winners/winners
+						+script('winners', 'blocks')
+
+						+style('participate', 'blocks')
+						include ../../blocks/participate/participate
+						
+						
+				
+		.page__bg-27.bg
+			img(src="_/uploads/scheme-contest-1.png" alt="")
+		.page__bg-28.bg
+			img(src="_/uploads/scheme-contest-2.png" alt="")
+		.page__bg-29.bg
+			img(src="_/uploads/scheme-contest-3.png" alt="")

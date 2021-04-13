@@ -1,0 +1,160 @@
+.inline {
+    display: inline-block;
+}
+
+.partbtnblock {
+}
+
+.registration {
+  width:360px;
+  /*margin: 8px 5px; */
+  margin-left: 0;
+  padding: 0 12px;
+  border: none;
+  height: 50px;
+  font: 20px/1.3em 'Open Sans Condensed', Trebuchet ms;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #000;
+  color: #ffffff;
+  transition: all 0.3s ease 0s;
+}
+
+.registration:hover {
+  background: #fff100;
+  color: #000;
+	}
+
+.competition-forex .field {
+    width : 160px;
+    border:none;
+    background:#fff100 !important;
+    padding: 10px 2px 10px 10px !important;
+    height:auto !important;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    color:#000 !important;
+}
+
+/*Form*/
+input[type="number"] {
+margin-bottom: 0.1px;
+}
+
+.competition-forex {
+  /*background-color: rgba(245, 246, 247, 0.9);
+  backface-visibility: hidden;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.65), inset 0 1px white, inset 0 0 1px white;
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.65), inset 0 1px white, inset 0 0 1px white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.65), inset 0 1px white, inset 0 0 1px white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  height: 45px;
+  left: 0;
+  padding-top: 9px;
+  /*position: absolute;*/
+  top: 0;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+}
+/*
+input[type="textt"] {
+	border:none;
+	background:#fff100 !important;
+	padding: 10px 2px 10px 10px !important;
+	height:auto !important;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	color:#000 !important;
+}
+*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    margin: 10px 0px 30px 0px;
+    background: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table td, table th {
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: .5em 1em;
+}
+table th {
+    background-color: #f7f7f7;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.quotes-comp{
+    display:inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.bitcoin-bid {
+    color: #d92e23; 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quotes-comp-bitcoin{
+    display:inline-block;
+    position: relative;
+    top: -4px;
+}
+
+.quotes-comp-bitcoin img{
+    height: 28px;
+    width: 20px;
+    top: -3px;
+}
+
+.datatable1 .competition-forex-table{
+    margin: 0px;
+}
+
+.main-holder .competition-forex-participants input.find {
+    width: 160px;
+    border: none;
+    background: #fff100 !important;
+    padding: 10px 2px 10px 10px !important;
+    height: auto !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #000 !important; 
+    float:right;
+}
+
+svg {
+    z-index: 1;
+}
+

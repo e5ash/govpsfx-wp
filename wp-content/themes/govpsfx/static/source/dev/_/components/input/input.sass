@@ -1,0 +1,88 @@
+@import ../../sys/sass/vars
+
+.input
+	&__label
+		font-size: 15px
+		font-weight: 700
+		margin-bottom: 18px
+	&__wrap
+		position: relative
+	&__area
+		width: 100%
+		font-family: $ffMain
+		color: #fff
+		background-color: transparent
+		&::placeholder
+			opacity: 0.5
+			color: #fff
+		&.--lg
+			font-size: 18px
+			font-weight: 700
+	&__desc
+		position: absolute
+		top: 50%
+		color: #4d4d4d
+		transform: translateY(-50%)
+	&.--b-white
+		.input
+			&__area
+				border: 1px solid #fff
+	&.--b-gray
+		.input
+			&__area
+				font-size: 15px
+				border: 1px solid rgba(201, 201, 201, 0.8)
+	&.--b-gray-l
+		.input
+			&__area
+				border: 1px solid rgba(201, 201, 201, 0.3)
+	&.--c-gray
+		.input
+			&__area
+				color: #212529
+				&::placeholder
+					opacity: .7
+					color: #212529
+	&.--c-white
+		.input
+			&__area
+				color: #fff
+				&::placeholder
+					opacity: .7
+					color: #fff
+				
+		
+	&.--md
+		.input
+			&__area
+				border-radius: 4px
+				height: 46px
+				padding-left: 17px
+				padding-right: 40px
+			&__desc
+				font-size: 15px
+				right: 14px
+	&.--lg
+		.input
+			&__area
+				border-radius: 4px
+				height: 48px
+				padding-left: 15px
+				padding-right: 15px
+			&__label
+				font-size: 16px
+				font-weight: 600
+				margin-bottom: 6px
+				color: #fff
+	&.--xlg
+		.input
+			&__area
+				border-radius: 4px
+				height: 51px
+				padding-left: 20px
+				padding-right: 20px
+	&.--fz-md
+		.input
+			&__area
+				font-size: 16px
+		

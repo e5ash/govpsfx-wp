@@ -1,0 +1,49 @@
+.combo-offer {
+  position: relative;
+  padding-top: 100px;
+}
+.combo-offer__slider.swiper-container {
+  overflow: visible;
+}
+.combo-offer__title {
+  margin-bottom: 20px;
+}
+.combo-offer__desc {
+  margin-bottom: 22px;
+}
+.combo-offer__desc br {
+  display: none;
+}
+.combo-offer__arrow.--prev {
+  left: -78px;
+}
+.combo-offer__arrow.--next {
+  right: -78px;
+}
+.combo-offer__bg-1 {
+  top: 0;
+  right: 0;
+}
+.combo-offer__bg-2 {
+  top: 298px;
+  left: 0;
+}
+
+@media screen and (max-width: 1110px) {
+  .combo-offer__arrow.--prev {
+    left: -28px;
+  }
+  .combo-offer__arrow.--next {
+    right: -28px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .combo-offer.--inner {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .combo-offer__arrow {
+    display: none;
+  }
+}

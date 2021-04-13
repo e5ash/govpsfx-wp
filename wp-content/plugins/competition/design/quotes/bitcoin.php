@@ -1,0 +1,2 @@
+<div class = "quotes-comp-bitcoin"><img src="<?=home_url('/')."wp-content/plugins/competition/img/".$arrow?>.png" width="15" height="20"></div>
+<div style = "display:inline-block" class="bitcoin-bid"><?=$price?></div>

@@ -1,0 +1,4 @@
+mixin _(classes, tag = 'div')
+	#{tag}(class=b + '__' + classes id=attributes.id)
+		if block
+			block

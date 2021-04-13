@@ -1,0 +1,40 @@
+include ../../sys/pug/vars
+
+.logo-list
+	.case.--sm
+		.logo-list__title.h4 Обзоры форекс брокеров
+		.logo-list__slider.swiper-container
+			.logo-list__list.swiper-wrapper
+				mixin logo
+					a.logo-list__item.swiper-slide(href="")
+						img(src="https://govpsfx.com/wp-content/uploads/2019/11/instaforex-yllow-198x50.png" alt="")
+				+logo
+				+logo
+				+logo
+				+logo
+				+logo
+				+logo
+				+logo
+				+logo
+				+logo
+				+logo
+				+logo
+			.logo-list__controls.row
+				.logo-list__all.link #[a(href="" alt="") перейти к форекс брокерам →]
+				.logo-list__arrows.row
+					.logo-list__arrow.swiper-button-prev.btn.arrow.--bg-yellow.--radius.--prev
+						<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+					.logo-list__arrow.swiper-button-next.btn.arrow.--bg-yellow.--radius.--next
+						<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+script.
+	document.addEventListener('DOMContentLoaded', ()=>{
+		var priceList = new Swiper('.logo-list__list', {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		}); 
+	});

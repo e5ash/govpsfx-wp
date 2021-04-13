@@ -1,0 +1,134 @@
+.news__tabs-list {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news__list {
+  padding-top: 35px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -30px;
+}
+.news__item.--lg {
+  display: flex;
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 325px;
+  margin-bottom: 80px;
+}
+.news__item.--lg .news__img-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  padding: 20px;
+}
+.news__item.--lg .news__data {
+  width: calc(100% - 640px);
+  padding-left: 20px;
+}
+.news__item.--lg .news__text {
+  opacity: 0.7;
+}
+.news__item.--lg .news__watch {
+  margin-top: auto;
+}
+.news__item.--sm {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  padding: 20px;
+  height: 345px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.news__item.--sm:hover {
+  color: #fff;
+}
+.news__item.--sm .news__img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, black 20%, rgba(255, 255, 255, 0) 60%);
+}
+.news__item.--sm .news__data {
+  margin-top: auto;
+}
+.news__item.--sm .news__desc {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.news__title {
+  margin-bottom: 20px;
+}
+.news__date {
+  opacity: 0.7;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.news__logo {
+  width: 109px;
+}
+.news__watch {
+  display: flex;
+  align-items: center;
+}
+.news__watch var {
+  font-size: 14px;
+  line-height: 15px;
+  margin-left: 3px;
+  color: #fff;
+}
+.news__img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.news__loader {
+  margin-top: 30px;
+}
+.news__loader img {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news__loader.--rotate img {
+  animation: 1s rotateBtn;
+}
+
+@keyframes rotateBtn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 992px) {
+  .news__item.--lg {
+    flex-wrap: wrap;
+    min-height: 1px;
+    margin-bottom: 30px;
+  }
+  .news__item.--lg .news__img-wrap {
+    width: 100%;
+    min-height: 345px;
+    margin-bottom: 12px;
+  }
+  .news__item.--lg .news__data {
+    width: 100%;
+    margin-left: auto;
+    padding-left: 0;
+  }
+  .news__item.--sm {
+    width: 100%;
+  }
+}

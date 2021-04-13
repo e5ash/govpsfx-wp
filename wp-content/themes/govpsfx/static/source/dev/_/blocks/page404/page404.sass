@@ -1,0 +1,53 @@
+@import ../../sys/sass/vars
+
+.page404
+	padding-top: 50px
+	padding-bottom: 195px
+	text-align: center
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__title
+		font-size: 294px
+		font-weight: bold
+		line-height: 294px
+	&__desc
+		font-weight: bold
+		margin-bottom: 40px
+	&__btn
+		min-width: 275px
+	&__dots
+		position: absolute
+		top: 100px
+		right: 90px
+	&__bg
+		left: 0
+		top: 282px
+
+
+@media screen and (max-width: 992px)
+	.page404
+		&__dots
+			right: 0
+		
+@media screen and (max-width: 767px)
+	.page404
+		padding-top: 35px
+		padding-bottom: 50px
+		&__title
+			font-size: 200px
+			line-height: 200px
+		&__dots
+			right: -110px
+		
+@media screen and (max-width: 540px)
+	.page404
+		&__title
+			font-size: 120px
+			line-height: 120px
+		&__desc
+			font-size: 23px
+			line-height: 26px
+		&__btn
+			width: 100%

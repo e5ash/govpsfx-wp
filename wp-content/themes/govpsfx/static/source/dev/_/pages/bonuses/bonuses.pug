@@ -1,0 +1,35 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Бонусы"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page.bg-wrap
+		.case
+			.page__head
+				+breadcrumbs()
+			.page__body
+				.page__title.h1 Форекс бонусы от брокеров
+				.page__wrap.row
+					.page__sidebar(data-sticky-container="")
+						script(src="_/sys/libs/sticky.js/dist/sticky.min.js")
+						.page__sticky
+							.page__nav
+								ul
+									li
+										a(href="") Форекс бонусы
+									li
+										a(href="") Акция VPS на тест-драйв
+						script.
+							var sticky = new Sticky('.page__sticky')
+					.page__section
+						.page__text.t1
+							p Рады представить вам наши специальный комбо форекс бонусы и акции. Комбо бонус включает в себя: бонус с возможностью вывода прибыли + бесплатный VPS-сервер на 6 торговых терминалов + торговый робот на выбор из нашей коллекции, насчитывающей более 70 форекс-советников. Собери свое Форекс-Комбо!
+						+style('bonuses', 'blocks')
+						include ../../blocks/bonuses/bonuses
+				
+		.page__bg-7.bg
+			img(src="_/uploads/scheme-bonuses-1.png" alt="")

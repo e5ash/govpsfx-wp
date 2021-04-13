@@ -1,0 +1,54 @@
+.logo-list {
+  margin-top: 65px;
+}
+.logo-list__title {
+  margin-bottom: 20px;
+}
+.logo-list__slider.swiper-container {
+  overflow: visible;
+}
+.logo-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  border-bottom: none;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.logo-list__item.swiper-slide-active, .logo-list__item.swiper-slide-next, .logo-list__item.swiper-slide-next + .swiper-slide {
+  opacity: 1;
+}
+.logo-list__item.swiper-slide-active:hover img, .logo-list__item.swiper-slide-next:hover img, .logo-list__item.swiper-slide-next + .swiper-slide:hover img {
+  opacity: 0.5;
+}
+.logo-list__item img {
+  transition: 0.3s;
+}
+.logo-list__controls {
+  align-items: center;
+  margin-top: 36px;
+  justify-content: flex-end;
+}
+.logo-list__all {
+  margin-right: 36px;
+}
+.logo-list__arrow {
+  position: relative;
+}
+.logo-list__arrow.--prev {
+  margin-right: 10px;
+}
+.logo-list__arrow.--prev, .logo-list__arrow.--next {
+  left: auto;
+  right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-list__all {
+    display: none;
+  }
+}

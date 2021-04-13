@@ -1,0 +1,61 @@
+@import ../../sys/sass/vars
+
+.range
+	box-shadow: none
+	height: 3px
+	border-radius: 5px
+	border: none
+	background: rgba(255,255,255,.2)
+	.noUi-connect
+		background: $yellow
+	.noUi-handle
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 15px
+		height: 15px
+		background: $yellow
+		outline: none
+		box-shadow: none
+		border-radius: 50%
+		border: none
+		right: -8px
+		&:before
+			top: 50%
+			left: 50%
+			width: 7px
+			height: 7px
+			border-radius: 50%
+			background-color: #d28b00
+			transform: translate(-50%, -50%)
+		&:after
+			display: none
+
+	.noUi-tooltip
+		color: $yellow
+		background-color: transparent
+		border: none
+		font-size: 10px
+		line-height: 13px
+		font-weight: 600
+		padding-bottom: 2px
+
+	.noUi-marker
+		display: none	
+
+	.noUi-value
+		font-size: 10px
+		color: #fff
+		font-weight: 600
+		top: -34px
+		transition: .3s
+		&:nth-of-type(2)
+			transform: translate(0,50%)
+		&:nth-of-type(4)
+			transform: translate(-100%,50%)
+		&.--hidden
+			opacity: 0
+
+	.noUi-pips-horizontal
+		height: auto
+		padding: 0

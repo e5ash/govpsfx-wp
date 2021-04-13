@@ -1,0 +1,146 @@
+@import ../../sys/sass/vars
+
+.winners
+	margin-top: 30px
+	&__title
+		margin-bottom: 20px
+	&__content
+		position: relative
+		display: flex
+		max-width: 690px
+		padding: 34px 48px 34px 35px
+		border-radius: 5px
+		background-color: rgba(255,255,255,.9)
+		margin-bottom: 115px
+		&:after
+			position: absolute
+			bottom: -76px
+			left: 50%
+			transform: translateX(-50%)
+			display: block
+			content: ''
+			width: 0
+			height: 0
+			margin-left: 20px
+			border-style: solid
+			border-width: 76px 38px 0 0
+			border-color: rgba(255,255,255,.9) transparent transparent transparent
+		&-icon
+			display: flex
+			align-items: center
+			width: 104px
+			padding-right: 35px
+			min-height: 174px
+			border-right: 1px solid rgba(0,0,0,0.1)
+		&-wrap
+			margin-left: 35px
+			color: #000
+			font-size: 28px
+			line-height: 40px
+			display: flex
+			align-items: center
+		&-list
+			align-items: center  !important
+
+	&__persons
+		width: 832px
+		margin-left: -71px
+		margin-right: -71px
+		padding-left: 71px
+		padding-right: 71px
+		position: relative
+		// overflow: visible
+		&-list
+			// overflow: hidden
+
+	&__text
+		height: auto
+		opacity: 0  !important
+		&.swiper-slide-active
+			opacity: 1  !important
+
+	&__persona
+		width: 84px
+		text-align: center
+		&.swiper-slide-active
+			// width: 210px
+			.winners__persona
+				&-img
+					width: 187px
+					height: 187px
+					margin-top: 0
+					margin-left: -50px
+					img
+						width: 187px
+						height: 187px
+				&-text
+					opacity: 1
+					margin-left: -64px
+		&-img
+			width: 84px
+			height: 84px
+			margin-top: 52px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 10px
+			// transition: .3s 
+			img
+				width: 84px
+				height: 84px
+				// transition: .3s
+				border-radius: 50%
+				margin-left: auto
+				margin-right: auto
+		&-text
+			opacity: 0
+			// transition: opacity .3s
+			width: 210px
+		&-name
+			font-size: 28px
+			line-height: 40px
+			font-weight: 600
+			margin-bottom: 7px
+		&-desc
+			font-size: 14px
+			line-height: 18px
+			font-weight: 600
+			strong
+				color: $yellow
+
+	&__arrow
+		top: 76px
+		transform: none
+		&.--prev
+			left: 0
+		&.--next
+			right: 0
+		
+
+@media screen and (max-width: 1310px)
+	.winners
+		&__persons
+			width: 100%
+			margin-left: 0
+			margin-right: 0
+			padding-left: 0
+			padding-right: 0
+		
+@media screen and (max-width: 992px)
+	// .winners
+		
+@media screen and (max-width: 767px)
+	.winners
+		&__content
+			margin-bottom: 65px
+			&:after
+				bottom: -48px
+				border-width: 48px 24px 0 0
+			&-icon
+				display: none
+			&-wrap
+				width: 100%
+				margin-left: 0
+
+		&__text
+			font-size: 16px
+			line-height: 18px

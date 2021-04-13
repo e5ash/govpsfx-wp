@@ -1,0 +1,87 @@
+include ../../sys/pug/vars
+
+.popular(class=popularClass)
+	.case
+		if (popularHead)
+			.popular__head
+				.popular__title.h1 Похожие советники
+				.popular__all.link.--md #[a(href="") Перейти →]
+		else
+			.popular__title.h2.tac #[h2 Популярные форекс советники]
+			.popular__subtitle.t1.tac
+				p Все советники торгуют на реальных счетах и подключены к Myfxbook.
+				p При заказе любого торгового эксперта VPS-сервер в подарок.
+			.popular__btn-wrap.row
+				a.popular__btn.btn.--sm.--bg-yellow.--bb.--radius(href="experts-forex.html") подобрать советника
+		.popular__slider.swiper-container.--has-pagination
+			.popular__list.swiper-wrapper
+				mixin popularItem(name, percent, deposit, text, link, strategy, img)
+					.popular__item.swiper-slide
+						.popular__name.h4.c-yellow=name
+						.popular__content.row
+							.popular__img
+								img(src=img alt="")
+							.popular__data
+								.popular__data-list
+									.popular__data-item
+										.popular__data-name.c-gray Общая доходность:
+										.popular__data-value=percent
+									.popular__data-item
+										.popular__data-name.c-gray Начальный депозит
+										.popular__data-value=deposit
+									.popular__data-item
+										.popular__data-name.c-gray Мониториг счёта
+										.popular__data-value #[a(href=strategy target="_blank") Myfxbook]
+
+						.popular__text= text
+						.popular__group
+							a.popular__btn.btn.--sm.--bg-yellow.--bb.--radius(href="") получить бесплатно
+							.popular__link.link #[a(href=link) посмотреть стратегию]
+
+				-
+					popular = [
+						['Hyperboloid Multi', '685.78 %', '$100', 'Мультивалютный торговый советник-сеточник, поиск точек входа в рынок происходит с помощью встроенных торговых индикаторов. При поступлении сигнала торговый эксперт открывает…', 'https://govpsfx.com/experts-forex/hyperboloid-multi/', 'https://www.myfxbook.com/members/minmalizm/hyperboloid-multi/2673515', '_/uploads/popular/hyperboloid-multi-7.png'],
+						['ForexHacked', '345.61 %', '$100', 'Высокочастотный индикаторный торговый советник со стратегией усреднения, для определения направления торговли робот использует два стандартных трендовых индикатора: Moving Average и…', 'https://govpsfx.com/experts-forex/forexhacked/', 'https://www.myfxbook.com/members/minmalizm/forexhacked/6609853', '_/uploads/popular/forexhacked.png'],
+						['Status Silver EA', '308.59 %', '$100', 'Рассмотрим форекс-советник Status Silver EA. Торговый форекс-робот использует для входа в рынок показания индикаторов: MFI, MA, ADX, Envelopes, в случае…', 'https://govpsfx.com/experts-forex/statussilverea/', 'https://www.myfxbook.com/members/parvozmc/status-silver-ea-v1/6549529', '_/uploads/popular/statussilverea-178x233.png'],
+						['Forex Setka Trader', '270.03 %', '$100', 'Бесплатный форекс-советник Forex Setka Trader – безиндикаторный советник Forex, использующий стратегию усреднения. Прибыль в данной стратегии получается во время откатов.…', 'https://govpsfx.com/experts-forex/forex-setka-trader/', 'https://www.myfxbook.com/members/minmalizm/forex-setka/3464572', '_/uploads/popular/forexsrtkatrader.png'],
+						['Remedy Trade', '246.46 %', '$100', 'В основе логики советника заложены два авторских алгоритма для определения разворота цены. Торговля ведется в обоих направлениях, при движении цены…', 'https://govpsfx.com/experts-forex/remedy-trade/', 'https://www.myfxbook.com/members/minmalizm/remedy-trade/5697403', '_/uploads/popular/remedy-trade.png'],
+						['Leprechaun', '219.63 %', '$500', 'Рассмотрим очередной бесплатный форекс-советник Leprechaun. Forex советник использует обратную пирамидальную сетку ордеров. Торговый эксперт относится к роботам-сеточникам, использующим в своей…', 'https://govpsfx.com/experts-forex/leprechaun/', 'https://www.myfxbook.com/members/minmalizm/leprechaun/7369208', '_/uploads/popular/leprechaun-178x233.png']
+					]
+				if popular
+					each popularItem in popular
+						+popularItem(popularItem[0], popularItem[1], popularItem[2], popularItem[3], popularItem[4], popularItem[5], popularItem[6])
+
+			.popular__pagination.swiper-pagination
+			.popular__arrows.arrows
+				.popular__arrow.swiper-button-prev.btn.arrow.--bg-yellow.--radius.--prev
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+				.popular__arrow.swiper-button-next.btn.arrow.--bg-yellow.--radius.--next
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+
+script.
+	document.addEventListener('DOMContentLoaded', ()=>{
+		var priceList = new Swiper('.popular__slider', {
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+				},
+				993: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+				}
+			}
+		}); 
+	});

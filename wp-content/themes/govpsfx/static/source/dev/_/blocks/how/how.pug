@@ -1,0 +1,20 @@
+include ../../sys/pug/vars
+
+.how
+	.case
+		.how__title.h2.tac #[h2 Как получить бесплатный VPS?]
+		.how__subtitle.tac Всего 3 шага которые займут не более 10 минут
+		.how__list.row
+			mixin howItem(count, text)
+				.how__item
+					.how__item-wrap
+						.how__count.num-1.c-yellow= count
+						.how__text.t2!= text
+			+howItem('#01', 'Зарегистрируйтесь <br> <a href="https://my.govpsfx.com/registration" target="_blank">на сайте</a>')
+			+howItem('#02', 'Выберите брокера <br>и <a href="brokers.html">откройте счёт</a>')
+			+howItem('#03', 'В личном кабинете <a href="https://my.govpsfx.com/auth/login" target="_blank">подайте <br>заявку</a> на получение VPS')
+		.how__btn-wrap.btn-wrap
+			a.how__btn.btn.--sm.--bg-yellow.--bb.--radius(href="") зарегистрироваться
+
+	.how__scheme-1.bg
+		img(src="_/uploads/scheme-5.png" alt="")

@@ -1,0 +1,21 @@
+include ../../sys/pug/vars
+
+.page__contacts.contacts.row
+	.contacts__col.--md
+		.contacts__list.row
+			.contacts__item
+				.contacts__title.h4 Поддержка 24/7
+				.contacts__wrap.t1
+					p #[a(href="mailto:support@govpsfx.com") support@govpsfx.com]
+					p #[a(href="tel:+78124253890") +7 (812) 425-38-90]
+					p #[a(href="javascript:;" class="jivo-show") поддержка в чате →]
+			.contacts__item
+				.contacts__title.h4 Брокерам:
+				.contacts__wrap.t1
+					p #[a(href="mailto:ib@govpsfx.com") ib@govpsfx.com]
+			.contacts__item
+				.contacts__title.h4 Реклама:
+				.contacts__wrap.t1
+					p #[a(href="mailto:ad@govpsfx.com") ad@govpsfx.com]
+	.contacts__col.--sm
+		+socials('contacts__socials')

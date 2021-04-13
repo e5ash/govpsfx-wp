@@ -1,0 +1,82 @@
+include ../../sys/pug/vars
+
+.reviews.tac.bg-wrap
+	.case
+		.reviews__title.h2 #[h2 Отзывы о GoVPSFX]
+		.reviews__slider.swiper-container.--has-pagination
+			.reviews__list.swiper-wrapper
+				mixin review(text, name, img)
+					.reviews__item.swiper-slide
+						.reviews__img-wrap.bg-wrap
+							.reviews__img.bg
+								img(src=img alt="")
+						.reviews__text= text
+						.reviews__name= name
+				-
+					reviews = [
+						[
+							'Я на Форексе новичок, слышала об удобстве и безопасности торговли на VPS, увидела в Интернете объявление GoVPSFX и решила попробовать т.к. VPS бесплатный. Не жалею.',
+							'Алла Викторовна',
+							'https://govpsfx.com/wp-content/uploads/2017/04/alla-victorovna-otziv-97x97.jpg'
+						],
+						[
+							'Нашел на форуме MMGP ссылку на GoVPSFX, в чате все объяснили, открыл счет по их партнерке у брокера, получил VPS. Теперь торгую на серваке, удобно и бесплатно.',
+							'Илья Николаевич',
+							'https://govpsfx.com/wp-content/uploads/2017/04/ilya-nikilaevich-otziv-97x97.jpg'
+						],
+						[
+							'Супер предложение, классная идея! Открыл счет у брокера по их партнерке и получил бесплатно VPS, все честно и без обмана. Советую!',
+							'Андрей Игоревич',
+							'https://govpsfx.com/wp-content/uploads/2017/04/andrey-igorevich-otziv-97x97.jpg'
+						],
+						[
+							'Трейдил на недорогих платных ВПС, висяки были жесть. Товарищ кинул ссылку на GoVPSFX, теперь торгую спокойно на 6 терминалах и ничего не оплачиваю.',
+							'Байсал Нурланович',
+							'https://govpsfx.com/wp-content/uploads/2017/04/baisal-otziv-97x97.jpg'
+						],
+						[
+							'Увлекся торговлей советниками, а без VPS не обойтись, платные сервера дорогие, а у GoVPSFX бесплатные и хорошо работают, меня все устраивает.',
+							'Михаил Григорьевич',
+							'https://govpsfx.com/wp-content/uploads/2017/04/Screenshot_3-97x97.jpg'
+						],
+						[
+							'Торгую на бесплатном VPS сервере более года, ни каких проблем не было, тех поддержка на высоте. Помогли с установкой советника.',
+							'Алексей Юрьевич',
+							'https://govpsfx.com/wp-content/uploads/2017/04/Screenshot_1-97x97.jpg'
+						]
+					]
+				if reviews
+					each review in reviews
+						+review(review[0], review[1], review[2])
+			.reviews__pagination.swiper-pagination
+			.reviews__arrows.arrows
+				.reviews__arrow.swiper-button-prev.btn.arrow.--bg-yellow.--radius.--prev
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+				.reviews__arrow.swiper-button-next.btn.arrow.--bg-yellow.--radius.--next
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+			
+	.reviews__scheme-1.bg
+		img(src="_/uploads/scheme-8.png" alt="")
+
+	.reviews__scheme-2.bg
+		img(src="_/uploads/scheme-9.png" alt="")
+
+	
+
+script.
+	document.addEventListener('DOMContentLoaded', ()=>{
+		var priceList = new Swiper('.reviews__slider', {
+			slidesPerView: 1,
+			spaceBetween: 126,
+			loop: true,
+			loopAdditionalSlides: 5,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		}); 
+	});

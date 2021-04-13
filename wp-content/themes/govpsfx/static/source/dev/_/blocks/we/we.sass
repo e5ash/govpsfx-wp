@@ -1,0 +1,112 @@
+@import ../../sys/sass/vars
+
+.we
+	z-index: 1
+	overflow: hidden
+	padding-top: 70px
+	padding-bottom: 70px
+	background-color: #161819
+	&__wrap
+		width: 100%
+		max-width: 967px
+		margin-left: auto
+		margin-right: auto
+	&__list
+		max-width: 504px
+		padding-top: 9px
+	&__item
+		position: relative
+		color: $black
+		background-color: $yellow
+		margin-bottom: 10px
+		overflow: hidden
+		min-height: 158px
+		padding: 49px 19px 20px 193px
+		&:last-of-type
+			margin-bottom: 0
+		&:nth-of-type(1)
+			.we
+				&__scheme
+					right: 0
+					bottom: 0
+		&:nth-of-type(2)
+			.we
+				&__scheme
+					top: 0
+					left: 120px
+		&:nth-of-type(3)
+			.we
+				&__scheme
+					top: 0
+					left: 0
+	&__count
+		position: absolute
+		bottom: 0
+		left: 0
+		font-size: 180px
+		line-height: 234px
+		opacity: 0.3
+		top: 0
+		left: -35px
+		font-weight: 700
+		color: #fff
+	&__value
+		font-weight: 500
+
+	&__content
+		max-width: 375px
+		margin-left: auto
+
+	&__title
+		margin-bottom: 20px
+
+	&__text
+		opacity: 0.7
+		line-height: 27px
+		padding-right: 35px
+
+	&__btn
+		display: inline-flex
+		width: 100%
+		max-width: 250px
+		margin-top: 40px
+		
+	&__scheme
+		position: absolute
+		&-1
+			top: 58px
+			left: 0
+		&-2
+			bottom: 0
+			right: 280px
+		&-3
+			top: 0
+			right: 56px
+		
+
+@media screen and (max-width: 1220px)
+	// .we
+		
+@media screen and (max-width: 992px)
+	.we
+		padding-top: 50px
+		padding-bottom: 50px
+		&__list
+			order: 2
+			max-width: 100%
+			padding-top: 0
+		&__content
+			max-width: 100%
+			margin-bottom: 40px
+		&__btn
+			margin-top: 30px
+			
+@media screen and (max-width: 767px)
+	.we
+		padding-top: 50px
+		padding-bottom: 50px
+		&__item
+			padding: 20px 30px 10px 40px
+		&__value
+			z-index: 1
+			position: relative

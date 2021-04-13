@@ -1,0 +1,15 @@
+include ../../sys/pug/vars
+
+.need-help
+	.need-help__title.h5= needHelpTitle
+	.need-help__list
+		.need-help__item
+			.need-help__name.t1 Почитайте наши статьи:
+			.need-help__btns.row
+				if needHelpLinks
+					each btn in needHelpLinks
+						a.need-help__btn.btn.--lg.--b-yellow.--radius(href=btn[1])!= btn[0] 
+		.need-help__item
+			.need-help__name.t1.--mb или
+			.need-help__btns.row
+				a.need-help__btn.btn.--lg.--b-yellow.--radius(href="") напишите нам, поможем

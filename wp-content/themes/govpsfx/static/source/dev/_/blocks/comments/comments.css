@@ -1,0 +1,11 @@
+.comments {
+  margin-top: 50px;
+  padding-bottom: 90px;
+}
+.comments__title {
+  margin-bottom: 20px;
+}
+.comments__wrap {
+  width: 100%;
+  max-width: 600px;
+}

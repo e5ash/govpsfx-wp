@@ -1,0 +1,59 @@
+@import ../../sys/sass/vars
+
+.logo-list
+	margin-top: 65px
+	&__title
+		margin-bottom: 20px
+	&__slider
+		&.swiper-container
+			overflow: visible
+	&__item
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 170px
+		padding: 12px
+		border-radius: 5px
+		background-color: #fff
+		border-bottom: none
+		opacity: 0.5
+		transition: .3s
+		&.swiper-slide-active, &.swiper-slide-next, &.swiper-slide-next + .swiper-slide
+			opacity: 1
+			&:hover
+				img
+					opacity: 0.5
+		img
+			transition: .3s
+		
+	&__controls
+		align-items: center
+		margin-top: 36px
+		justify-content: flex-end
+	&__all
+		margin-right: 36px
+	&__arrow
+		position: relative
+		&.--prev
+			margin-right: 10px
+		&.--prev, &.--next
+			left: auto
+			right: auto
+			
+
+
+@media screen and (max-width: 1220px)
+	// .logo-list
+		
+@media screen and (max-width: 992px)
+	// .logo-list
+		
+@media screen and (max-width: 767px)
+	.logo-list
+		&__all
+			display: none
+		&__arrows
+			// justify-content: center
+			// width: 100%
+			
+		

@@ -1,0 +1,39 @@
+.need-help {
+  margin-top: 65px;
+}
+.need-help__title {
+  margin-bottom: 24px;
+}
+.need-help__item {
+  margin-bottom: 20px;
+}
+.need-help__item:last-of-type {
+  margin-bottom: 0;
+}
+.need-help__name {
+  margin-bottom: 14px;
+}
+.need-help__name.--mb {
+  margin-bottom: 20px;
+}
+.need-help__btns {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -20px;
+}
+.need-help__btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.need-help__btn.--lg {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+@media screen and (max-width: 767px) {
+  .need-help {
+    margin-top: 45px;
+  }
+}

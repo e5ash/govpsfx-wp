@@ -1,0 +1,129 @@
+@import ../../sys/sass/vars
+
+.news
+	&__tabs-list
+		max-width: 950px
+		margin-left: auto
+		margin-right: auto
+	&__list
+		padding-top: 35px
+		margin-left: -10px
+		margin-right: -10px
+		margin-bottom: -30px
+	&__item
+		&.--lg
+			display: flex
+			width: calc(100% - 20px)
+			margin-left: 10px
+			margin-right: 10px
+			min-height: 325px
+			margin-bottom: 80px
+			.news
+				&__img-wrap
+					display: flex
+					flex-direction: column
+					width: 640px
+					padding: 20px
+				&__data
+					width: calc(100% - 640px)
+					padding-left: 20px
+				&__text
+					opacity: 0.7
+				&__watch
+					margin-top: auto
+					
+					
+		&.--sm
+			display: flex
+			flex-direction: column
+			width: calc(50% - 20px)
+			margin-left: 10px
+			margin-right: 10px
+			height: auto
+			padding: 20px
+			height: 345px
+			color: #fff
+			font-weight: 400
+			margin-bottom: 30px
+			&:hover
+				color: #fff
+			.news
+				&__img
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(255,255,255,0) 60%)
+				&__data
+					margin-top: auto
+				&__desc
+					margin-top: 4px
+					margin-bottom: 4px
+	&__title
+		margin-bottom: 20px
+	&__date
+		opacity: 0.7
+		font-size: 13px
+		text-transform: uppercase
+	&__logo
+		width: 109px
+	&__watch
+		display: flex
+		align-items: center
+		var
+			font-size: 14px
+			line-height: 15px
+			margin-left: 3px
+			color: #fff
+	&__img
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	&__loader
+		margin-top: 30px
+		img
+			cursor: pointer
+			margin-left: auto
+			margin-right: auto
+		&.--rotate
+			img
+				animation: 1s rotateBtn
+
+@keyframes rotateBtn
+	0%
+		transform: rotate(0deg)
+
+	100%
+		transform: rotate(360deg)
+
+@media screen and (max-width: 1220px)
+	// .news
+		
+@media screen and (max-width: 992px)
+	.news
+		&__item
+			&.--lg
+				flex-wrap: wrap
+				min-height: 1px
+				margin-bottom: 30px
+				.news
+					&__img-wrap
+						width: 100%
+						min-height: 345px
+						margin-bottom: 12px
+
+					&__data
+						width: 100%
+						margin-left: auto
+						padding-left: 0
+			&.--sm
+				width: 100%
+				
+		
+@media screen and (max-width: 767px)
+	// .news
+		

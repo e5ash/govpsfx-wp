@@ -1,0 +1,63 @@
+.page404 {
+  padding-top: 50px;
+  padding-bottom: 195px;
+  text-align: center;
+}
+.page404__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page404__title {
+  font-size: 294px;
+  font-weight: bold;
+  line-height: 294px;
+}
+.page404__desc {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.page404__btn {
+  min-width: 275px;
+}
+.page404__dots {
+  position: absolute;
+  top: 100px;
+  right: 90px;
+}
+.page404__bg {
+  left: 0;
+  top: 282px;
+}
+
+@media screen and (max-width: 992px) {
+  .page404__dots {
+    right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page404 {
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
+  .page404__title {
+    font-size: 200px;
+    line-height: 200px;
+  }
+  .page404__dots {
+    right: -110px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .page404__title {
+    font-size: 120px;
+    line-height: 120px;
+  }
+  .page404__desc {
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .page404__btn {
+    width: 100%;
+  }
+}

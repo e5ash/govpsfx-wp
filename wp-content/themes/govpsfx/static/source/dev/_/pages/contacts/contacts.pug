@@ -1,0 +1,26 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Контакты"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page.bg-wrap
+		.case
+			.page__head
+				+breadcrumbs()
+			.page__body
+				+style('contacts', 'blocks')
+				include ../../blocks/contacts/contacts
+				
+				+style('contact-us', 'blocks')
+				include ../../blocks/contact-us/contact-us
+						
+
+		.page__bg-8.bg
+			img(src="_/uploads/scheme-contacts-1.png" alt="")
+
+		.page__bg-9.bg
+			img(src="_/uploads/scheme-contacts-2.png" alt="")

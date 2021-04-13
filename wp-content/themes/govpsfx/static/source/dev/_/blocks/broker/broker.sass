@@ -1,0 +1,102 @@
+@import ../../sys/sass/vars
+
+.broker
+	&__data
+		max-width: 680px
+		margin-top: 25px
+	&__actions
+		margin-top: 60px
+
+.methods
+	margin-top: 30px
+	margin-bottom: 35px
+	&__list
+		margin-left: -6px
+		margin-right: -6px
+		margin-bottom: -12px
+		justify-content: center
+	&__item
+		margin-left: 6px
+		margin-right: 6px
+		margin-bottom: 12px
+
+.steps
+	margin-bottom: 30px
+	&__list
+		margin-left: -15px
+		margin-right: -15px
+		margin-bottom: -30px
+	&__item
+		overflow: hidden
+		position: relative
+		width: calc(100% / 3 - 30px)
+		height: 218px
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 30px
+		background-color: #ffb800
+		&:before
+			content: ''
+			position: absolute
+			background-repeat: no-repeat
+			background-position: center
+		&:nth-of-type(2)
+			&:before
+				bottom: -22px
+				right: 0
+				width: 170px
+				height: 76px
+				background-image: url('../../uploads/scheme-step-2.png')
+		&:nth-of-type(3)
+			&:before
+				top: 0
+				right: 0
+				width: 224px
+				height: 192px
+				background-image: url('../../uploads/scheme-step-3.png')
+	&__count
+		position: absolute
+		opacity: 0.3
+		font-size: 180px
+		line-height: 230px
+		left: -32px
+		bottom: -72px
+		font-weight: 700
+	&__link
+		z-index: 1
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		a
+			display: block
+			width: 100%
+			height: 100%
+			color: #000
+			font-weight: 600
+			padding: 35px 25px 20px
+			&:hover
+				// background-color: $yellow-l
+
+	&__img
+		position: absolute
+
+
+
+
+		
+@media screen and (max-width: 1220px)
+	// .broker
+		
+@media screen and (max-width: 992px)
+	// .broker
+		
+@media screen and (max-width: 767px)
+	// .broker
+
+	.steps
+		&__item
+			width: calc(100% / 1 - 30px)
+		
+		

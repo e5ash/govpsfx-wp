@@ -1,0 +1,148 @@
+@import ../../sys/sass/vars
+
+.popular
+	padding-top: 120px
+	padding-bottom: 40px
+	overflow: hidden
+	&.--pb0
+		padding-top: 145px
+		padding-bottom: 0
+	&__head
+		max-width: 978px
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		align-items: center
+		margin-bottom: 40px
+		.popular
+			&__title
+				margin-bottom: 0
+				padding-right: 20px
+			&__all
+				margin-left: auto
+				white-space: nowrap
+				
+	&__title
+		margin-bottom: 20px
+	&__subtitle
+		margin-bottom: 40px
+		p
+			margin-bottom: 0
+	&__btn-wrap
+		justify-content: center
+		margin-bottom: 60px
+	&__slider
+		width: 100%
+		max-width: 978px
+		margin-left: auto
+		margin-right: auto
+		overflow: visible
+	&__item
+		border-radius: 5px
+		padding: 24px 40px 33px 21px
+		background-color: rgba(15,16,17,.5)
+	&__content
+		margin-bottom: 34px
+	&__img
+		width: 178px
+		
+	&__data
+		padding-left: 18px
+		padding-top: 18px
+		width: calc(100% - 178px)
+		&-item
+			margin-bottom: 16px
+		&-name
+			font-size: 13px
+			line-height: 32px
+			letter-spacing: 1px
+			text-transform: uppercase
+		&-value
+			line-height: 24px
+	&__name
+		text-align: center
+	&__text
+		opacity: 0.7
+		font-size: 17px
+		line-height: 24px
+		height: 120px
+		overflow: hidden
+		margin-bottom: 60px
+		padding-left: 25px
+		padding-right: 5px
+	&__group
+		display: flex
+		flex-wrap: wrap
+		text-align: center
+		justify-content: center
+		flex-direction: column
+		margin-left: auto
+		margin-right: auto
+	&__btn
+		margin-left: auto
+		margin-right: auto
+	&__link
+		margin-top: 20px
+	&__arrow
+		&.--prev
+			left: -76px
+		&.--next
+			right: -76px
+			
+		
+		
+
+@media screen and (max-width: 1340px)
+	.popular
+		&__head
+			max-width: 705px
+		&__slider
+			max-width: 705px
+		&__data
+			&-name
+				line-height: 18px
+		&__content
+			margin-bottom: 25px
+		&__text
+			margin-bottom: 35px
+		
+@media screen and (max-width: 992px)
+	.popular
+		&__slider
+			max-width: 504px
+		&__arrow
+			&.--prev
+				left: -24px
+			&.--next
+				right: -24px
+@media screen and (max-width: 767px)
+	.popular
+		&__head
+			flex-direction: column
+			.popular
+				&__title
+					padding-right: 0
+				&__all
+					margin-top: 20px
+					margin-right: auto
+		&__subtitle
+			margin-bottom: 30px
+			p
+				display: inline
+		&__text
+			padding-left: 0
+			padding-right: 0
+		&__btn-wrap
+			margin-bottom: 40px
+@media screen and (max-width: 450px)
+	.popular
+		&__item
+			padding: 15px
+		&__img
+			// width: 150px
+		&__data
+			&-value
+				white-space: nowrap
+		&__arrow
+			display: none
+		

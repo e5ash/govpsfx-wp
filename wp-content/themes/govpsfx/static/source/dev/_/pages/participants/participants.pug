@@ -1,0 +1,131 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Участники конкурса GBP/USD"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page.bg-wrap
+		.case
+			.page__head
+				+breadcrumbs()
+			.page__body.--sm
+				.page__title.h1 Участники конкурса GBP/USD
+				.page__text.t1
+					blockquote.blockquote.tog.--show
+						.blockquote__title.tog-head Участники розыгрыша 
+						.blockquote__content.tog-body
+							.table
+								table
+									thead
+										tr
+											th НИК
+											th ПРОГНОЗ
+											th ДАТА ПРОГНОЗА
+									tbody
+										tr
+											td panasovk
+											td -0.0002
+											td 2021-03-22 18:21
+
+										tr
+											td Рамиль
+											td 0.0005
+											td 2021-03-22 17:49
+
+										tr
+											td Тимофей
+											td 0.0025
+											td 2021-03-22 17:28
+
+										tr
+											td Annaanna
+											td -0.0006
+											td 2021-03-22 17:00
+
+										tr
+											td Георгий
+											td -0.0003
+											td 2021-03-22 16:14
+
+										tr
+											td Oleg
+											td -0.0022
+											td 2021-03-22 15:07
+
+										tr
+											td Tema
+											td -0.0018
+											td 2021-03-22 14:56
+
+										tr
+											td yuriy
+											td -0.0029
+											td 2021-03-22 14:35
+
+										tr
+											td Александр
+											td -0.0005
+											td 2021-03-22 14:14
+
+										tr
+											td trhklup
+											td 0.0022
+											td 2021-03-22 14:00
+
+										tr
+											td Ольга
+											td 0.0001
+											td 2021-03-22 12:49
+
+										tr
+											td vlad
+											td -0.0016
+											td 2021-03-22 12:00
+
+										tr
+											td Иван
+											td -0.0025
+											td 2021-03-22 11:56
+
+										tr
+											td qqee
+											td -0.0010
+											td 2021-03-22 08:14
+
+										tr
+											td Парамон
+											td -0.0028
+											td 2021-03-22 05:35
+
+										tr
+											td Олександр
+											td -0.0008
+											td 2021-03-22 01:49
+
+										tr
+											td dtyz
+											td -0.0010
+											td 2021-03-22 00:00
+							.pagination
+								ul
+									li
+										span 1
+									li
+										a(href="") 2
+									li
+										a(href="") >
+									li
+										a(href="") >>
+				.page__btn-wrap.btn-wrap
+					a.page__btn-more.btn.--lg.--bg-yellow.--radius(href="#modal-contest" data-popup="") участвовать в конкурсе
+
+				+style('participate', 'blocks')
+				include ../../blocks/participate/participate
+				+script('participate', 'blocks')
+
+				
+		.page__bg-7.bg
+			img(src="_/uploads/scheme-bonuses-1.png" alt="")

@@ -1,0 +1,30 @@
+include ../../sys/pug/vars
+
+.server
+	.case
+		.server__title.h2.tac #[h2 VPS-серверы Intel #[br]Xeon E3/E5]
+		.server__wrap
+			mixin serverItem(name, value)
+				.server__item
+					.server__name= name
+					.server__value.h3= value
+			.server__list.row
+				.server__col
+					+serverItem('Дисковое пространство', '40GB Hard disk')
+					+serverItem('Оперативная память', '4GB RAM')
+					+serverItem('Гарантированный аптайм', '99.99%')
+					+serverItem('Локация VPS', 'Нидерланды / Франция')
+
+				.server__col
+					+serverItem('Операционная система', 'Win Server 2012 R2 Standart')
+					+serverItem('Виртуализация', 'KVM, Hyper-V')
+					+serverItem('Трафик', 'безлимитный')
+					+serverItem('Торговых терминалов', 'до 5 на один VPS')
+
+			.server__img-wrap
+				.server__img
+					img(src="_/uploads/server.png" alt="")
+				.server__ellipse
+					img(src="_/uploads/server-ellipse.png" alt="")
+					
+		

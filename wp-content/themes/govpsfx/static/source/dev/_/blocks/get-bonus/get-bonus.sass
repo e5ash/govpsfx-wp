@@ -1,0 +1,53 @@
+@import ../../sys/sass/vars
+
+.get-bonus
+	&__title
+		margin-bottom: 15px
+	&__form
+		align-items: flex-start
+	&__item
+		margin-right: 50px
+		&:last-of-type
+			margin-right: 0
+	&__input
+		display: flex
+		flex-direction: column
+		width: 244px
+		.wpcf7-not-valid-tip
+			color: #f00 !important
+			font-size: 14px
+			margin-top: 5px !important
+
+	&__btn
+		width: 165px
+		margin-top: 31px
+
+
+	.wpcf7-response-output
+		color: #fff  !important
+
+@media screen and (max-width: 1220px)
+	// .get-bonus
+		
+@media screen and (max-width: 992px)
+	.get-bonus
+		&__item
+			margin-right: 20px
+		
+@media screen and (max-width: 767px)
+	.get-bonus
+		&__title
+			text-align: center
+			font-size: 28px
+			line-height: 40px
+		&__form
+			flex-direction: column
+			align-items: center
+		&__item
+			margin-right: 0
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+		&__btn
+			width: 100%
+			margin-top: 0

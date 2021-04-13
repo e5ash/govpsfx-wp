@@ -1,0 +1,94 @@
+@import ../../sys/sass/vars
+
+// .rebate
+
+
+.calc
+	padding-top: 10px
+	margin-bottom: 35px
+	&__title
+		margin-bottom: 20px
+	&__subtitle
+		font-size: 13px
+		line-height: 17px
+		text-transform: uppercase
+		opacity: 0.5
+		margin-bottom: 14px
+
+	&__left
+		width: 54%
+		padding-right: 50px
+	&__item
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0
+	&__link
+		display: block
+		margin-bottom: 15px
+		img
+			margin-left: 0
+	&__col
+		width: 50%
+	&__radios
+		display: flex
+		flex-direction: column
+	&__radio
+		margin-bottom: 11px
+	&__select
+		max-width: 190px
+	&__right
+		width: 46%
+		padding: 37px 42px
+		border-radius: 5px
+		background-color: #141617
+	&__values
+		position: relative
+		margin-bottom: -58px
+	&__value
+		width: 50%
+		border-bottom: 1px solid #ffb800
+		padding-bottom: 29px
+		margin-bottom: 29px
+		&-title
+			line-height: 24px
+			margin-bottom: 5px
+		&-area
+			font-size: 28px
+			line-height: 40px
+			font-weight: 600
+			white-space: nowrap
+		&:nth-last-of-type(1), &:nth-last-of-type(2)
+			border-bottom: none
+	&__table
+		overflow-x: auto
+		clear: both
+		margin-top: 45px
+	&__actions
+		margin-top: 40px
+@media screen and (max-width: 1220px)
+	// .rebate
+		
+@media screen and (max-width: 992px)
+	// .rebate
+		
+@media screen and (max-width: 767px)
+	.calc
+		&__left
+			width: 100%
+			padding-right: 0
+			margin-bottom: 35px
+		&__right
+			width: 100%
+		
+
+@media screen and (max-width: 450px)
+	.calc
+		&__controls
+			flex-direction: column
+		&__col
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+
+		&__right
+			padding: 20px

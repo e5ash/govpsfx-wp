@@ -1,0 +1,179 @@
+include ../../sys/pug/vars
+
+.rebate
+	.case
+		.rebate__text.t1
+			h1 Рибейт-калькулятор расчета возврата спреда для RoboForex
+			p С помощью калькулятора вы сможете рассчитать вознаграждение, которое получите после подключения своего торгового счета к нашему рибейт-сервису. Чтобы осуществить расчет, укажите торговый инструмент, которым будете торговать (к примеру, валютную пару EURUSD), и количество лот. Нажмите кнопку «Рассчитать» и увидите, какую сумму вы могли бы получить в день, неделю, месяц и год, просто подключив свой счет к нашему рибейт-сервису. Ниже в таблице приведена сводная информация по всем типам счетов брокера. Из таблицы вы можете узнать уровень рибейта по каждому типу счета в отдельности и выбрать тот, по которому будете получать самые большие выплаты, а также узнать период начисления вознаграждения.
+			.rebate__calc.calc
+				.calc__title.h4 Расчёт рибейта
+				.calc__wrap.row
+					.calc__left
+						a.calc__link(href="https://rbfxdirect.com/ru/site/forex-trading/trading/trading-accounts/?a=bsut")
+							img(src="https://govpsfx.com/wp-content/uploads/2019/11/robo-bonus-deposit115-468.png" alt="")
+						.calc__controls.row
+							.calc__col
+								.calc__item
+									.calc__subtitle Чем торгуете
+									.calc__inner
+										.calc__radios
+											.calc__radio.check.radio.--md.--b-white
+												input(type="radio" name="instrument" id="radio_Валюты" checked="checked")
+												.radio__wrap
+													.radio__icon
+													.radio__title Валюты
+											.calc__radio.check.radio.--md.--b-white
+												input(type="radio" name="instrument" id="radio_Металлы")
+												.radio__wrap
+													.radio__icon
+													.radio__title Металлы
+											.calc__radio.check.radio.--md.--b-white
+												input(type="radio" name="instrument" id="radio_Криптовалюты")
+												.radio__wrap
+													.radio__icon
+													.radio__title Криптовалюты
+											.calc__radio.check.radio.--md.--b-white
+												input(type="radio" name="instrument" id="radio_CFD на акции")
+												.radio__wrap
+													.radio__icon
+													.radio__title CFD на акции
+											.calc__radio.check.radio.--md.--b-white
+												input(type="radio" name="instrument" id="radio_CFD на фьючерсы")
+												.radio__wrap
+													.radio__icon
+													.radio__title CFD на фьючерсы
+
+							.calc__col
+								.calc__item
+									.calc__subtitle Иструмент
+									.calc__inner
+										.calc__select.select.--md.--b-yellow.--line
+											select(name="сurrency_pair")
+												option(value="BRENT" selected="") BRENT
+												option(value="WTI") WTI
+								.calc__item
+									.calc__subtitle Количество лот в день
+									.calc__inner
+										.calc__incdec.incdec
+											.incdec__btn.btn.--plus +
+											input.incdec__input(type="tel" name="count_lots" id="count_lots" value="1")
+											.incdec__btn.btn.--minus -
+					.calc__right
+						.calc__values.row
+							.calc__value
+								.calc__value-title В день
+								.calc__value-area $45.00
+
+							.calc__value
+								.calc__value-title В неделю
+								.calc__value-area $225.00
+
+							.calc__value
+								.calc__value-title В месяц
+								.calc__value-area $945.00
+
+							.calc__value
+								.calc__value-title В год
+								.calc__value-area $11115.00
+				.calc__table.t1
+					<table class="article__table rebate__table dataTable no-footer" id="broker-account-table" role="grid">
+						<thead>
+								<tr class="article__table-nav" role="row">
+									<th class="article__table-nav-item sorting_disabled" rowspan="1" colspan="1" aria-label="Типы счетов" style="width: 106px;">
+											<div class="flex">
+												<div class="article__table-nav-item-text">Типы счетов</div>
+											</div>
+									</th>
+									<th class="article__table-nav-item sorting_disabled" rowspan="1" colspan="1" aria-label="Тип рибейта" style="width: 101px;">
+											<div class="flex">
+												<div class="article__table-nav-item-text">Тип рибейта</div>
+											</div>
+									</th>
+									<th class="article__table-nav-item sorting_asc" tabindex="0" aria-controls="broker-account-table" rowspan="1" colspan="1" aria-label="       Рибейт (USD): activate to sort column descending" style="width: 119px;" aria-sort="ascending">
+											<div class="t-icon t-sorting"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.61883 5.57102H9.86881C9.93656 5.57102 9.99218 5.5493 10.0356 5.50572C10.0792 5.46219 10.101 5.40662 10.101 5.33886V3.94603C10.101 3.87826 10.0792 3.82269 10.0356 3.77917C9.99218 3.73569 9.93656 3.71387 9.86881 3.71387H6.61883C6.55109 3.71387 6.49552 3.73559 6.45197 3.77917C6.40852 3.82269 6.38672 3.87826 6.38672 3.94603V5.33886C6.38672 5.40662 6.40844 5.46219 6.45197 5.50572C6.49552 5.54922 6.55109 5.57102 6.61883 5.57102Z" fill="white"></path><path d="M6.61883 1.85713H8.47591C8.54365 1.85713 8.5993 1.8354 8.64267 1.79188C8.68632 1.74833 8.70779 1.69276 8.70779 1.62502V0.232138C8.70779 0.164473 8.6863 0.108827 8.64267 0.0652761C8.5993 0.0218264 8.54365 0 8.47591 0H6.61883C6.55109 0 6.49552 0.0217248 6.45197 0.0652507C6.40855 0.108827 6.38672 0.164473 6.38672 0.232112V1.62499C6.38672 1.69273 6.40844 1.7483 6.45197 1.79185C6.49555 1.8353 6.55109 1.85713 6.61883 1.85713Z" fill="white"></path><path d="M4.99395 10.2142H3.6011V0.232138C3.6011 0.164473 3.5794 0.108751 3.53585 0.0652761C3.49229 0.0218264 3.43672 0 3.36896 0H1.97608C1.90842 0 1.85269 0.0217248 1.80922 0.0652507C1.76579 0.108827 1.74397 0.164473 1.74397 0.232112V10.2142H0.35109C0.244778 10.2142 0.17221 10.2625 0.133486 10.3593C0.0947371 10.4513 0.111761 10.5358 0.184228 10.6132L2.50563 12.9347C2.55884 12.9781 2.61441 12.9998 2.67249 12.9998C2.73536 12.9998 2.79103 12.9781 2.83936 12.9347L5.15352 10.6205C5.20195 10.5626 5.22609 10.5044 5.22609 10.4466C5.22609 10.3786 5.20426 10.3232 5.16084 10.2793C5.11731 10.236 5.06174 10.2142 4.99395 10.2142Z" fill="white"></path><path d="M12.8214 11.208C12.7778 11.1643 12.7223 11.1426 12.6545 11.1426H6.61883C6.55109 11.1426 6.49552 11.1643 6.45197 11.208C6.40855 11.2514 6.38672 11.3071 6.38672 11.3747V12.7675C6.38672 12.8355 6.40844 12.8909 6.45197 12.9345C6.49555 12.978 6.55109 12.9997 6.61883 12.9997H12.6545C12.7222 12.9997 12.7778 12.978 12.8213 12.9345C12.8648 12.8908 12.8865 12.8355 12.8865 12.7675V11.3747C12.8866 11.3071 12.8648 11.2514 12.8214 11.208Z" fill="white"></path><path d="M6.61883 9.28564H11.2617C11.3294 9.28564 11.385 9.26391 11.4287 9.22044C11.4721 9.17696 11.4938 9.12132 11.4938 9.05368V7.66067C11.4938 7.59303 11.4721 7.53736 11.4287 7.49391C11.385 7.45044 11.3294 7.42871 11.2617 7.42871H6.61883C6.55109 7.42871 6.49552 7.45044 6.45197 7.49391C6.40852 7.53739 6.38672 7.59303 6.38672 7.66067V9.05368C6.38672 9.12132 6.40844 9.17699 6.45197 9.22044C6.49552 9.26391 6.55109 9.28564 6.61883 9.28564Z" fill="white"></path></svg><span>Рибейт (USD)</span></div>
+									</th>
+									<th class="article__table-nav-item sorting" tabindex="0" aria-controls="broker-account-table" rowspan="1" colspan="1" aria-label="Период начислений: activate to sort column ascending" style="width: 162px;">
+											<div class="flex">
+												<div class="article__table-nav-item-text">Период начислений</div>
+											</div>
+									</th>
+								</tr>
+						</thead>
+						<tbody id="broker-account-table-body">
+								<tr role="row" class="odd">
+									<td>Prime</td>
+									<td>комиссия</td>
+									<td class="sorting_1">$ 1.00</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="even">
+									<td>Rtrader</td>
+									<td>комиссия</td>
+									<td class="sorting_1">$ 1.35</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="odd">
+									<td>
+											<div class="best-choice"><span class="best-choice-account">Pro-Standard</span></div>
+									</td>
+									<td>от спреда</td>
+									<td class="sorting_1">$ 3.32</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="even">
+									<td>ECN-Pro NDD</td>
+									<td>комиссия</td>
+									<td class="sorting_1">$ 3.32</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="table-disabled odd">
+									<td>ECN-Pro Affiliate</td>
+									<td>комиссия</td>
+									<td class="sorting_1">$ 6.35</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="table-disabled even">
+									<td>Pro-Affiliate</td>
+									<td>от спреда</td>
+									<td class="sorting_1">$ 9.31</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="table-disabled odd">
+									<td>Fix-Affiliate</td>
+									<td>от спреда</td>
+									<td class="sorting_1">$ 12.00</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="table-disabled even">
+									<td>ECN-FixSpread NDD</td>
+									<td>от спреда</td>
+									<td class="sorting_1">$ 5.71</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="table-disabled odd">
+									<td>Fix-Standard</td>
+									<td>от спреда</td>
+									<td class="sorting_1">$ 7.51</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="table-disabled even">
+									<td>Pro-Cent</td>
+									<td>от спреда</td>
+									<td class="sorting_1">$ 5.85</td>
+									<td>ежесуточно</td>
+								</tr>
+								<tr role="row" class="table-disabled odd">
+									<td>Fix-Cent</td>
+									<td>от спреда</td>
+									<td class="sorting_1">$ 7.51</td>
+									<td>ежесуточно</td>
+								</tr>
+						</tbody>
+					</table>
+				.calc__actions.b-actions
+					.b-actions__list.row
+						a.b-actions__item.btn.--lg.--b-yellow.--radius(href="") ОТКРЫТЬ РЕАЛЬНЫЙ СЧЁТ →
+						.b-actions__item.link.--md #[a(href="") ВИДЕООБЗОР ROBOFOREX → ]
+			<p><span style="color: #999999;font-size: 11pt;">В калькуляторе за единицу измерения объема всегда берется стандартный лот (100 000 единиц валюты), независимо от того, центовый счет или классический долларовый. На счетах с плавающим спредом или комиссией в расчетах используется среднее значение.</span></p>
+	+style('incdec', 'components')
+	+script('incdec', 'components')

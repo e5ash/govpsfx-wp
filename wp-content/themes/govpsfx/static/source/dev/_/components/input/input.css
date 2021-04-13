@@ -1,0 +1,83 @@
+.input__label {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.input__wrap {
+  position: relative;
+}
+.input__area {
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #fff;
+  background-color: transparent;
+}
+.input__area::placeholder {
+  opacity: 0.5;
+  color: #fff;
+}
+.input__area.--lg {
+  font-size: 18px;
+  font-weight: 700;
+}
+.input__desc {
+  position: absolute;
+  top: 50%;
+  color: #4d4d4d;
+  transform: translateY(-50%);
+}
+.input.--b-white .input__area {
+  border: 1px solid #fff;
+}
+.input.--b-gray .input__area {
+  font-size: 15px;
+  border: 1px solid rgba(201, 201, 201, 0.8);
+}
+.input.--b-gray-l .input__area {
+  border: 1px solid rgba(201, 201, 201, 0.3);
+}
+.input.--c-gray .input__area {
+  color: #212529;
+}
+.input.--c-gray .input__area::placeholder {
+  opacity: 0.7;
+  color: #212529;
+}
+.input.--c-white .input__area {
+  color: #fff;
+}
+.input.--c-white .input__area::placeholder {
+  opacity: 0.7;
+  color: #fff;
+}
+.input.--md .input__area {
+  border-radius: 4px;
+  height: 46px;
+  padding-left: 17px;
+  padding-right: 40px;
+}
+.input.--md .input__desc {
+  font-size: 15px;
+  right: 14px;
+}
+.input.--lg .input__area {
+  border-radius: 4px;
+  height: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.input.--lg .input__label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+.input.--xlg .input__area {
+  border-radius: 4px;
+  height: 51px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.input.--fz-md .input__area {
+  font-size: 16px;
+}

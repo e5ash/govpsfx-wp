@@ -1,0 +1,71 @@
+@import ../../sys/sass/vars
+
+.how
+	padding-top: 55px
+	position: relative
+	&__title
+		margin-bottom: 20px
+	&__list
+		margin-top: 120px
+		margin-bottom: 75px
+	&__item
+		display: flex
+		width: 33.333%
+		position: relative
+		font-weight: 600
+		&-wrap
+			position: relative
+			margin-left: auto
+			margin-right: auto
+
+	&__count
+		opacity: 0.1
+		position: absolute
+		top: -100px
+		left: -50px
+	&__text
+		z-index: 1
+		position: relative
+	&__btn
+		margin-left: auto
+		margin-right: auto
+	&__scheme-1
+		position: absolute
+		top: 0
+		right: 0
+@media screen and (max-width: 1340px)
+	.how
+		&__list
+			margin-top: 70px
+			margin-bottom: 50px
+		&__text
+			max-width: 240px
+		&__count
+			top: -80px
+		
+@media screen and (max-width: 992px)
+	.how
+		&__item
+			width: 100%
+			margin-bottom: 60px
+			&:last-of-type
+				margin-bottom: 0
+		&__count
+			left: 50%
+			top: -80px
+			// margin-left: -100px
+			transform: translateX(-50%)
+		&__text
+			text-align: center
+		
+@media screen and (max-width: 767px)
+	.how
+		padding-top: 15px
+		&__list
+			margin-top: 60px
+			margin-bottom: 40px
+		&__text
+			font-size: 16px
+			line-height: 20px
+		&__count
+			top: -55px

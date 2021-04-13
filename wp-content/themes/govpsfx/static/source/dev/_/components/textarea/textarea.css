@@ -1,0 +1,83 @@
+.textarea__label {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.textarea__wrap {
+  position: relative;
+}
+.textarea__area {
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #212529;
+  resize: none;
+}
+.textarea__area::placeholder {
+  color: #212529;
+}
+.textarea__area.--lg {
+  font-size: 18px;
+  font-weight: 700;
+}
+.textarea__desc {
+  position: absolute;
+  top: 50%;
+  color: #4d4d4d;
+  transform: translateY(-50%);
+}
+.textarea.--b-gray .textarea__area {
+  font-size: 15px;
+  border: 1px solid rgba(201, 201, 201, 0.8);
+}
+.textarea.--b-white .textarea__area {
+  border: 1px solid #fff;
+}
+.textarea.--b-gray .textarea__area {
+  font-size: 15px;
+  border: 1px solid rgba(201, 201, 201, 0.8);
+}
+.textarea.--b-gray-l .textarea__area {
+  border: 1px solid rgba(201, 201, 201, 0.3);
+}
+.textarea.--c-gray .textarea__area {
+  color: #212529;
+}
+.textarea.--c-gray .textarea__area::placeholder {
+  opacity: 0.7;
+  color: #212529;
+}
+.textarea.--c-white .textarea__area {
+  color: #fff;
+}
+.textarea.--c-white .textarea__area::placeholder {
+  opacity: 0.7;
+  color: #fff;
+}
+.textarea.--md .textarea__area {
+  border-radius: 4px;
+  height: 210px;
+  padding: 17px 20px;
+}
+.textarea.--md .textarea__desc {
+  font-size: 15px;
+  right: 14px;
+}
+.textarea.--lg .textarea__area {
+  border-radius: 4px;
+  padding: 15px;
+  height: 210px;
+}
+.textarea.--lg .textarea__label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+.textarea.--xlg .textarea__area {
+  border-radius: 4px;
+  padding: 15px 20px;
+  height: 210px;
+}
+.textarea.--fz-md .textarea__area {
+  font-size: 16px;
+}

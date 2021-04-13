@@ -1,0 +1,53 @@
+@import ../../sys/sass/vars
+
+// .expert
+	// &__desc
+		
+
+.props
+	align-items: center
+	padding: 50px 44px
+	background-color: #161819
+	max-width: 815px
+	margin-top: 20px
+	margin-bottom: 60px
+	&__list
+		width: 480px
+		margin-bottom: -20px
+	&__item
+		display: flex
+		font-size: 14px
+		align-items: flex-start
+		margin-bottom: 20px
+	&__name
+		min-width: 50%
+		color: #7c7d7e
+		text-transform: uppercase
+		padding-right: 10px
+	&__value
+		min-width: 50%
+		font-size: 16px
+		ul
+			li
+				&:after
+					content: ', '
+					margin-right: 6px
+				&:last-of-type
+					&:after
+						display: none
+			a
+				font-weight: 400
+	&__img
+		width: calc(100% - 480px)
+		padding-left: 70px		
+
+
+@media screen and (max-width: 1220px)
+	// .expert
+		
+@media screen and (max-width: 992px)
+	// .expert
+		
+@media screen and (max-width: 767px)
+	// .expert
+		

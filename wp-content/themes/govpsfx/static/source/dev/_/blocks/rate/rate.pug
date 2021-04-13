@@ -1,0 +1,163 @@
+include ../../sys/pug/vars
+
+.rate.bg-wrap(class=rateClass)
+	.case.row
+		.rate__wrap.row
+			.rate__content
+				.rate__title.h2 #[h2 Рейтинг советников и ПАММ-счетов]
+				.rate__text.t1 Раз в неделю мы будем высылать вам рейтинг лучших, на наш взгляд, торговых советников, ПАММ-счетов и выгодных бонусных акций от брокеров. Подписывайтесь на рассылку, чтобы быть в тренде!
+				+sForm('rate__form')(title="true")
+		.rate__inner
+			.rate__slider.swiper-container
+				.rate__list.swiper-wrapper
+					mixin rate(img, date, text, watch)
+						a.rate__item.bg-wrap.swiper-slide(href="news-item.html")
+							.rate__logo
+								img(src="_/uploads/logo-govpsfx-black-xs.png" alt="")
+							.rate__data
+								.rate__date= date
+								.rate__desc.t1=text
+								.rate__watch
+									img(src="_/uploads/icons/eye.png" alt="")
+									var=watch
+							.rate__img.bg
+								img(src=img alt="")
+
+					-
+						rates = [
+							[
+								'https://govpsfx.com/wp-content/uploads/2021/02/amazon-digital-currency-mexico-460x344.jpg',
+								'8 февраля 2021',
+								'Еженедельная форекс-аналитика и прогноз цен: AUDUSD, S&amp;P500, Exxon',
+								'9'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2021/02/food-prices-rising-460x344.jpg',
+								'8 февраля 2021',
+								'Еженедельная форекс-аналитика и прогноз цен: EURUSD, XAUUSD, BRENT',
+								'10'
+							],
+							[
+								 
+								'https://govpsfx.com/wp-content/uploads/2021/02/silver-rapid-growth-460x344.jpg',
+								'4 февраля 2021',
+								'Рынок серебра стремительно бьет рекорды',
+								'14'
+							],
+							[
+								 
+								'https://govpsfx.com/wp-content/uploads/2021/02/visa-support-cryptocurrencies-460x344.jpg',
+								'2 февраля 2021',
+								'Платежная система VISA поддержит криптовалюты',
+								'14'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2020/03/analitika-main-460x344.jpg',
+								'1 февраля 2021',
+								'Еженедельная форекс-аналитика и прогноз цен: USDCNH, S&amp;P500, DAX30',
+								'22'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2020/03/analitika-main-460x344.jpg',
+								'1 февраля 2021',
+								'Еженедельная форекс-аналитика и прогноз цен: EURUSD, XAUUSD, BRENT',
+								'20'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2021/01/ukraine-scam-brokers-460x344.jpg',
+								'30 января 2021',
+								'На Украине открыли дело против очередных участников рынка Forex',
+								'24'
+							],
+							[
+								 
+								'https://govpsfx.com/wp-content/uploads/2021/01/ecb-euro-fall-460x344.jpg',
+								'29 января 2021',
+								'ЕЦБ спровоцировал падение цены евро',
+								'29'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2021/01/elon-musk-bitcoin-460x344.jpg',
+								'26 января 2021',
+								'Илон Маск не против получать оплату Биткоинами',
+								'33'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2020/03/analitika-main-460x344.jpg',
+								'25 января 2021',
+								'Еженедельная форекс-аналитика и прогноз цен: EURUSD, XAUUSD, BRENT',
+								'28'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2020/03/analitika-main-460x344.jpg',
+								'25 января 2021',
+								'Еженедельная форекс-аналитика и прогноз цен: USDCNH, S&amp;P500, ASX',
+								'29'
+							],
+							[
+								 
+								'https://govpsfx.com/wp-content/uploads/2021/01/pyramid-scheme-impunity-460x344.jpg',
+								'24 января 2021',
+								'Создатели пирамиды «Актив» ушли от ответственности за финансовое...',
+								'39'
+							],
+							[
+								 
+								'https://govpsfx.com/wp-content/uploads/2021/01/cb-online-casino-460x344.jpg',
+								'22 января 2021',
+								'Нелегальные букмекеры и онлайн-казино практически исчезли в России',
+								'43'
+							],
+							[
+								 
+								'https://govpsfx.com/wp-content/uploads/2021/01/incent-rise-and-fall-460x344.jpg',
+								'19 января 2021',
+								'Токен Incent вырос на 1 500 000% за сутки',
+								'42'
+							],
+							[
+								'https://govpsfx.com/wp-content/uploads/2020/03/analitika-main-460x344.jpg',
+								'18 января 2021',
+								'Еженедельная форекс-аналитика и прогноз цен: GazpromNef, S&amp;P500, ASX',
+								'38'
+							]
+
+						]
+
+					if rates
+						each rate in rates
+							+rate(rate[0], rate[1], rate[2], rate[3])
+
+			.rate__controls
+				.rate__more.link.--md #[a(href="") перейти к новостям →]
+				.rate__arrows.rate__arrows.arrows
+					.rate__arrow.swiper-button-prev.btn.arrow.--bg-yellow.--radius.--prev
+						<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+					.rate__arrow.swiper-button-next.btn.arrow.--bg-yellow.--radius.--next
+						<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+
+
+	.rate__scheme-1.bg
+		img(src="_/uploads/scheme-13.png" alt="")
+
+	.rate__scheme-2.bg
+		img(src="_/uploads/scheme-14.png" alt="")
+
+script.
+	document.addEventListener('DOMContentLoaded', ()=>{
+		var priceList = new Swiper('.rate__slider', {
+			spaceBetween: 20,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 'auto',
+				}
+			}
+		}); 
+	});

@@ -1,0 +1,16 @@
+include ../../sys/pug/vars
+
+.get-bonus
+	.case.--sm
+		.get-bonus__title.h4= getBonuseTitle ? getBonuseTitle : 'Получить бонус'
+		.get-bonus__form.row
+			.get-bonus__item
+				.get-bonus__input.input.--b-white.--lg
+					label.input__label Номер счета:
+					input.input__area(type="text" name="num")
+			.get-bonus__item
+				.get-bonus__input.input.--b-white.--lg
+					label.input__label Email:
+					input.input__area(type="text" name="email")
+			.get-bonus__item
+				.get-bonus__btn.btn.--sm.--bg-yellow.--bb.--radius Отправить

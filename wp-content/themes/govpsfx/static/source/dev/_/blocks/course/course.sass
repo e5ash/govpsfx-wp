@@ -1,0 +1,85 @@
+@import ../../sys/sass/vars
+
+.course
+	margin-top: 60px
+	&__nav
+		&-list
+			margin-bottom: 46px
+			margin-left: -5px
+			margin-right: -5px
+		&-item
+			margin-bottom: 10px
+			margin-left: 5px
+			margin-right: 5px
+			font-size: 10px
+			font-weight: 600
+			line-height: 13px
+			letter-spacing: .714286px
+			text-transform: uppercase
+			padding: 5px 9px
+			border: 1px solid $yellow
+			border-radius: 5px
+	&__item
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0
+		&.--show
+			.course
+				&__head
+					&-icon
+						transform: rotate(180deg)
+						// padding-right: 20px
+	&__head
+		font-weight: bold
+		display: flex
+		align-items: center
+		&-icon
+			margin-left: 20px
+			transition: .3s
+	&__body
+		&-list
+			display: flex
+			flex-direction: column
+			padding-top: 10px
+		&-item
+			color: rgba(255,255,255,.7)
+			font-size: 13px
+			font-weight: 400
+			line-height: 18px
+			letter-spacing: 1px
+			text-transform: uppercase
+			margin-bottom: 13px
+			margin-top: 10px
+			padding-left: 20px
+			position: relative
+			&:before
+				position: absolute
+				content: "-"
+				font-size: 26px
+				line-height: 15px
+				color: $yellow
+				left: 0
+				top: 0
+
+
+@media screen and (max-width: 1220px)
+	// .course
+		
+@media screen and (max-width: 992px)
+	// .course
+		
+@media screen and (max-width: 767px)
+	.course
+		margin-top: 40px
+		&__nav
+			&-list
+				margin-bottom: 35px
+				// flex-direction: column
+				// align-items: flex-start
+		&__head
+			&-name
+				width: calc(100% - 24px)
+				padding-right: 10px
+			&-icon
+				margin-left: 0
+				width: 24px

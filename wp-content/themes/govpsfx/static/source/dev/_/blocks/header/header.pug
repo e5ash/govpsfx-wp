@@ -1,0 +1,117 @@
+include ../../sys/pug/vars
+
+header.header
+	.header__panel.panel
+		.case
+			.panel__wrap.row
+				a.panel__logo.logo.--lg(href="/") #[img(src="_/uploads/logo-govpsfx.png" alt="")]
+				.panel__contact.p-contact
+					.p-contact__title.c-gray Поддержка 24/7
+					.p-contact__list.row
+						.p-contact__item #[a(href="mailto:support@govpsfx.com") support@govpsfx.com] 
+						.p-contact__item #[a(href="tel:+78124253890") +7 (812) 425-38-90]
+				.panel__links.links.--line
+					ul
+						li
+							a(href="https://my.govpsfx.com/auth/login" target="_blank") Войти
+						li
+							a(href="https://my.govpsfx.com/registration" target="_blank") зарегистрироваться
+				a.panel__lang.btn.--b-white.--radius(href="") EN
+
+				.panel__search.btn.toggle-search.--h-icon-yellow
+					<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.7989 20.2395C13.1012 20.2395 15.1943 19.4233 16.8268 18.0419L24.1524 25.3674C24.3198 25.5349 24.5291 25.6186 24.7594 25.6186C24.9896 25.6186 25.1989 25.5349 25.3664 25.3674C25.7012 25.0326 25.7012 24.4884 25.3664 24.1535L18.0408 16.8279C19.4012 15.1954 20.2384 13.0814 20.2384 10.8C20.2384 5.58838 16.0105 1.36047 10.7989 1.36047C5.60821 1.36047 1.35938 5.60931 1.35938 10.8C1.35938 16.0116 5.60821 20.2395 10.7989 20.2395ZM10.7989 3.07675C15.0687 3.07675 18.5222 6.55117 18.5222 10.8C18.5222 15.0698 15.0687 18.5233 10.7989 18.5233C6.52914 18.5233 3.07565 15.0488 3.07565 10.8C3.07565 6.55117 6.55007 3.07675 10.7989 3.07675Z" fill="white"></path></svg>
+	.header__nav-wrap
+		.case.row
+			.header__ham.ham.btn.--bg-yellow.toggle-nav
+				.ham__icon #[div]#[div]#[div]
+				.ham__title меню
+			.header__nav.links
+				ul
+					li
+						a(href="https://my.govpsfx.com/registration") Получить VPS
+					li
+						a(href="experts-forex.html") Советники
+					li
+						a(href="brokers.html") Рейтинг брокеров
+					li
+						a(href="bonuses.html") Бонусы и акции
+					li
+						a(href="https://my.govpsfx.com/auth/login" target="_blank") Войти
+					li
+						a(href="https://my.govpsfx.com/registration" target="_blank") зарегистрироваться
+	nav.header__drop.nav.bg-wrap
+		.nav__head.row
+			.nav__close.btn.toggle-nav
+				.nav__close-icon
+					<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.5 53C41.1355 53 53 41.1355 53 26.5C53 11.8645 41.1355 0 26.5 0C11.8645 0 0 11.8645 0 26.5C0 41.1355 11.8645 53 26.5 53Z" fill="#FFB800"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5501 34.4002C15.8166 35.1336 15.8166 36.3227 16.5501 37.0562C17.2835 37.7896 18.4726 37.7896 19.206 37.0562L26.8031 29.4591L34.4002 37.0562C35.1336 37.7896 36.3227 37.7896 37.0562 37.0562C37.7896 36.3227 37.7896 35.1336 37.0562 34.4002L29.4591 26.8031L37.0562 19.206C37.7896 18.4726 37.7896 17.2835 37.0562 16.5501C36.3227 15.8166 35.1336 15.8166 34.4002 16.5501L26.8031 24.1472L19.206 16.5501C18.4726 15.8166 17.2835 15.8166 16.5501 16.5501C15.8166 17.2835 15.8166 18.4726 16.5501 19.206L24.1472 26.8031L16.5501 34.4002Z" fill="#2A2A2A"></path></svg>
+				.nav__close-title Закрыть
+			a.nav__logo(href="")
+				img(src="_/uploads/logo-govpsfx.png" alt="")
+		.nav__body.row
+			.nav__body-col
+				.nav__list.links.--col.--mb.--arrow
+					ul
+						li
+							a(href="https://my.govpsfx.com/registration" target="_blank") Получить бесплатный VPS
+						li
+							a(href="brokers.html") Рейтинг форекс-брокеров
+						li
+							a(href="paid-vps-servers.html") Аренда VPS-серверов для Форекс
+						li
+							a(href="instruktsii-tehnicheskaya-informatsiya.html") Инструкции по работе с VPS
+						li
+							a(href="analitika-i-novosti.html") Аналитика и новости
+						li
+							a(href="") Торговые Советники
+						li
+							a(href="") Бонусы и акции
+						li
+							a(href="") Форекс конкурсы
+						li
+							a(href="") ПАРТНЕРСКАЯ ПРОГРАММА
+						li
+							a(href="contacts.html") Контакты
+			.nav__body-col
+				.nav__title.c-gray Обучающие курсы
+				.nav__list.links.--col.--mb-sm
+					ul
+						li
+							a(href="all-forex.html") Форекс
+						li
+							a(href="") Криптовалюта
+						li
+							a(href="") Бинарные опционы
+						li
+							a(href="") Глоссарий терминов
+				.nav__title.c-gray Поддержка 24/7
+				.nav__email #[a(href="mailto:support@govpsfx.com") support@govpsfx.com]
+				.nav__phone #[a(href="tel:+78124253890") +7 (812) 425-38-90]
+				.nav__title.c-gray Остались вопросы?
+				.nav__list.links.--col.--mb-sm
+					ul
+						li
+							a(href="") Бесплатный VPS для Форекс, в чем подвох?
+						li
+							a(href="") ЧТО ТАКОЕ VPS СЕРВЕР И ЗАЧЕМ ОН НУЖЕН ТРЕЙДЕРУ?
+
+		.nav__foot.row
+			.nav__foot-col
+				.nav__title.c-gray Хотите с нами работать?
+				.nav__write.link.--md #[a(href="mailto:support@govpsfx.com") Пишите, ждём →]
+			.nav__foot-col
+				.nav__title.c-gray Мы в соцсетях
+				+socials('nav__socials')
+		.nav__scheme-1.bg
+			img(src="_/uploads/scheme-1.png" alt="")
+
+		.nav__scheme-2.bg
+			img(src="_/uploads/scheme-2.png" alt="")
+	.header__search.search
+		.case.row
+			.search__close.btn.toggle-search
+				<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.5 53C41.1355 53 53 41.1355 53 26.5C53 11.8645 41.1355 0 26.5 0C11.8645 0 0 11.8645 0 26.5C0 41.1355 11.8645 53 26.5 53Z" fill="#FFB800"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5501 34.4002C15.8166 35.1336 15.8166 36.3227 16.5501 37.0562C17.2835 37.7896 18.4726 37.7896 19.206 37.0562L26.8031 29.4591L34.4002 37.0562C35.1336 37.7896 36.3227 37.7896 37.0562 37.0562C37.7896 36.3227 37.7896 35.1336 37.0562 34.4002L29.4591 26.8031L37.0562 19.206C37.7896 18.4726 37.7896 17.2835 37.0562 16.5501C36.3227 15.8166 35.1336 15.8166 34.4002 16.5501L26.8031 24.1472L19.206 16.5501C18.4726 15.8166 17.2835 15.8166 16.5501 16.5501C15.8166 17.2835 15.8166 18.4726 16.5501 19.206L24.1472 26.8031L16.5501 34.4002Z" fill="#2A2A2A"></path></svg>
+			.search__wrap.input.input.--lg.--b-yellow
+				.input__wrap
+					input.input__area(type="text" name="s" placeholder="Напишите что ищите")
+					.input__icon
+						<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.7989 20.2395C13.1012 20.2395 15.1943 19.4233 16.8268 18.0419L24.1524 25.3674C24.3198 25.5349 24.5291 25.6186 24.7594 25.6186C24.9896 25.6186 25.1989 25.5349 25.3664 25.3674C25.7012 25.0326 25.7012 24.4884 25.3664 24.1535L18.0408 16.8279C19.4012 15.1954 20.2384 13.0814 20.2384 10.8C20.2384 5.58838 16.0105 1.36047 10.7989 1.36047C5.60821 1.36047 1.35938 5.60931 1.35938 10.8C1.35938 16.0116 5.60821 20.2395 10.7989 20.2395ZM10.7989 3.07675C15.0687 3.07675 18.5222 6.55117 18.5222 10.8C18.5222 15.0698 15.0687 18.5233 10.7989 18.5233C6.52914 18.5233 3.07565 15.0488 3.07565 10.8C3.07565 6.55117 6.55007 3.07675 10.7989 3.07675Z" fill="#ffb800"></path></svg>

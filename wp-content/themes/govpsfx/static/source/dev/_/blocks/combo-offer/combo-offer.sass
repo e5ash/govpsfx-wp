@@ -1,0 +1,46 @@
+@import ../../sys/sass/vars
+
+.combo-offer
+	position: relative
+	padding-top: 100px
+	&__slider
+		&.swiper-container
+			overflow: visible
+	&__title
+		margin-bottom: 20px
+	&__desc
+		// max-width: 650px
+		margin-bottom: 22px
+		br
+			display: none
+	&__arrow
+		&.--prev
+			left: -78px
+		&.--next
+			right: -78px
+	&__bg
+		&-1
+			top: 0
+			right: 0
+		&-2
+			top: 298px
+			left: 0
+
+@media screen and (max-width: 1110px)
+	.combo-offer
+		&__arrow
+			&.--prev
+				left: -28px
+			&.--next
+				right: -28px
+			
+@media screen and (max-width: 992px)
+	.combo-offer
+		&.--inner
+			padding-top: 70px
+		
+@media screen and (max-width: 767px)
+	.combo-offer
+		&__arrow
+			display: none
+		

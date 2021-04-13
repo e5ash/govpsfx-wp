@@ -1,0 +1,65 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Аренда VPS-серверов для Форекс"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page.bg-wrap
+		.case
+			.page__head
+				+breadcrumbs()
+			.page__body.--sm
+				.page__title.h1 Тарифы на VPS-серверы для Форекс
+				.page__text.--mb-sm.t1
+					h2 90% возврат спреда (рибейт) при аренде VPS
+					p Теперь вам не нужно арендовать VPS-сервер для торговли на Форекс на одном сайте, а получать возврат спреда (рибейт) на другом. У нас вы сможете арендовать надежный VPS для трейдинга по низкой цене и получить 90% возврат спреда, и все это на одном сайте в одном личном кабинете. Предложение придется по вкусу трейдерам, которые не только знают цену деньгам, но и своему времени.
+
+				//- price
+				- priceSliderClass = '--lg'
+				+style('price', 'blocks')
+				include ../../blocks/price/price-slider
+				+script('price', 'blocks')
+
+				//- return 
+				- returnClass = '--lg --sm-pb'
+				+style('return', 'blocks')
+				include ../../blocks/return/return
+
+
+				+style('test', 'blocks')
+				include ../../blocks/test/test
+
+				.page__text.t1
+					blockquote
+						p ЗАЧЕМ ТРЕЙДЕРУ НУЖЕН VPS-СЕРВЕР:
+						p Наверное, нет такого трейдера, который хотя бы раз в жизни не задумывался об использовании торговых советников или об автоматизации собственной торговой стратегии. И если найти форекс-робота задача выполнимая, то обеспечить в домашних условиях бесперебойную работу торгового терминала, что жизненно необходимо торговому эксперту, практически невозможно. Аренда VPS-сервера не только создаст оптимальные условия для работы торгового робота, но и избавит от таких неторговых рисков, как поломка компьютера, отключение электричества, нестабильное Интернет-подключение, доступ к ПК третьих лиц. Остались вопросы? Прочтите подробный разбор вопроса #[a(href="/what-is-vps-server/" rel="noopener" target="_blank") здесь].
+					blockquote
+						p ВОЗВРАТ СПРЕДА ИЛИ ЧТО ТАКОЕ РИБЕЙТ:
+						p Давайте разберем на примере нашего рибейт-сервиса, как происходит возврат спреда. Итак, трейдер открывает счет у любого брокера из списка на нашем сайте GoVPSFX, и как только он начнет торговать, брокер начисляет нам партнерское вознаграждение. С полученной таким путем прибыли мы выплачиваем трейдеру 90%, оставляя себе 10%. К примеру, трейдер открыл торговый счет у одного из брокеров, используя нашу партнерскую ссылку, и совершил за неделю сделок общим объемом 10 стандартных лот по валютной паре EURUSD, по условиям партнёрской программы брокер выплатил GoVPSFX $150, из которых $135 мы вернули трейдеру.
+
+					<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+					<iframe loading="lazy" title="Подключаем счет к Рибейт-сервису от GoVPSFX" width="750" height="422" src="https://www.youtube.com/embed/q5wn4xfA7hg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div></figure>
+				
+				+style('questions', 'blocks')
+				include ../../blocks/questions/questions
+
+				-
+					needHelpTitle = 'Остались вопросы?'
+					needHelpLinks = [
+						['Как выбрать VPS-сервер для Форекс  →', ''],
+						['Как управлять VPS-сервером со смартфона  →', ''],
+					]
+				+style('need-help', 'blocks')
+				include ../../blocks/need-help/need-help
+		.page__bg-4.bg
+			img(src="_/uploads/scheme-brokers-1.png" alt="")
+
+		.page__bg-5.bg
+			img(src="_/uploads/scheme-brokers-2.png" alt="")
+
+		.page__bg-6.bg
+			img(src="_/uploads/scheme-brokers-3.png" alt="")

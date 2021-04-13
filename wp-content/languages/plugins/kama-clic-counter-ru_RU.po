@@ -1,0 +1,417 @@
+# Translation of Plugins - Kama Click Counter - Development (trunk) in Russian
+# This file is distributed under the same license as the Plugins - Kama Click Counter - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-03-04 00:20:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Kama Click Counter - Development (trunk)\n"
+
+#: admin/mce/mce.php:30
+msgid "Select from media"
+msgstr "Выбрать из медиатеки"
+
+#. Plugin URI of the plugin
+msgid "https://wp-kama.com/?p=77"
+msgstr "https://wp-kama.ru/?p=430"
+
+#: admin/options-page.php:86
+msgid "Substring starting and ending with / becomes regular expression, ex: /^[0-9]+/."
+msgstr "Подстрока которая начинается и кончается знаком / станет регулярным выражением, пр.: /^[0-9]+/."
+
+#: admin/options-page.php:84
+msgid "If URL contain defined here substring, click on it will NOT BE count. Separate with comma or new line."
+msgstr "Если URL содержит указанную тут подстроку, клик по нему НЕ БУДЕТ засчитан. Разделяйте подстроки запятой или новой строкой."
+
+#: admin/options-page.php:81
+msgid "Exclude filter"
+msgstr "Фильтр исключений"
+
+#: admin/options-page.php:77
+msgid "Disable this option and save 1 database query for each link!"
+msgstr "Отключите эту опцию и сохраните 1 запрос к базе данных для каждой ссылки!"
+
+#: admin/options-page.php:70
+msgid "How to display statistics for the links in content?"
+msgstr "Как показывать статистику ссылки в контенте?"
+
+#: admin/options-page.php:204
+msgid "Current:"
+msgstr "Текущий:"
+
+#: admin/options-page.php:200
+msgid "Post ID"
+msgstr "ID записи"
+
+#: admin/mce/mce.php:27
+msgid "Click Counter Shortcode"
+msgstr "Шорткод Click Counter"
+
+#: admin/mce/mce.php:34
+msgid "Download file URL"
+msgstr "URL на файл"
+
+#: admin/mce/mce.php:33
+msgid "Link title (not required)"
+msgstr "Название ссылки (не обязательно)"
+
+#: admin/mce/mce.php:32
+msgid "Insert shortcode"
+msgstr "Вставить шорткод"
+
+#: admin/mce/mce.php:31
+msgid "Click counter shortcode insertion"
+msgstr "Вставка шорткода Click counter"
+
+#: admin/mce/mce.php:29
+msgid "Find file for download shortcode"
+msgstr "Выберите файл, который будет использоваться в шорткоде"
+
+#: admin/mce/mce.php:28
+msgid "Select file"
+msgstr "Выбрать файл"
+
+#. Description of the plugin
+msgid "Count clicks on any link all over the site. Creates beautiful file download block in post content - use shortcode [download url=\"any file URL\"]. Has widget of top clicks/downloads."
+msgstr "Считает клики на любую ссылку на всем сайте. Создает красивый блок загрузки файла в тексте записи - используйте шорткод [download url=\"any file URL\"]. Есть виджет топа загрузок или кликов."
+
+#. Author URI of the plugin
+msgid "https://wp-kama.com"
+msgstr "https://wp-kama.ru"
+
+#. Author of the plugin
+msgid "Kama"
+msgstr "Kama"
+
+#: widget.php:144
+msgid "Template CSS:"
+msgstr "CSS шаблона:"
+
+#: widget.php:138
+msgid "Out template:"
+msgstr "Шаблон:"
+
+#: widget.php:133
+msgid "Use URL to post with the link, and not URL of the link "
+msgstr "Устанавливать ссылку на запись, а не на загрузку"
+
+#: widget.php:128
+msgid "display only downloads, but not all links?"
+msgstr "выводить только загрузки, а не все ссылки?"
+
+#: widget.php:123
+msgid "show links older then this data (ex. 2014-08-09)"
+msgstr "показывать ссылки позднее этой даты (пр. 2014-08-09)"
+
+#: widget.php:120
+msgid "how to sort the result?"
+msgstr "как сортировать результат?"
+
+#: widget.php:119
+msgid "clicks per day"
+msgstr "кликов в день"
+
+#: widget.php:118
+msgid "all clicks"
+msgstr "все клики"
+
+#: widget.php:114
+msgid "how many links to show?"
+msgstr "сколко ссылок показыать?"
+
+#: widget.php:109
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: widget.php:95
+msgid "Top Downloads"
+msgstr "Топ загрузок"
+
+#: widget.php:16
+msgid "Kama Click Counter Widget"
+msgstr "Виджет Kama Click Counter"
+
+#: widget.php:15
+msgid "KCC: Top Downloads"
+msgstr "KCC: Топ Загрузок"
+
+#: class.KCCounter_Admin.php:120 class.KCCounter_Admin.php:129
+msgid "Nothing was deleted!"
+msgstr "Ничего не удалено!"
+
+#: class.KCCounter_Admin.php:118
+msgid "Selected objects deleted"
+msgstr "Выбранные ссылки удалены!"
+
+#: class.KCCounter_Admin.php:111
+msgid "Failed to update link!"
+msgstr "Не удалось обновить ссылку!"
+
+#: class.KCCounter_Admin.php:111
+msgid "Link updated!"
+msgstr "Ссылка обновлена!"
+
+#: class.KCCounter_Admin.php:91
+msgid "Settings reseted to defaults"
+msgstr "Настройки сброшены на начальные!"
+
+#: class.KCCounter_Admin.php:84
+msgid "Error: Failed to update the settings!"
+msgstr "Ошибка: не удалось обновить настройки!"
+
+#: class.KCCounter_Admin.php:82
+msgid "Settings updated."
+msgstr "Настройки сохранены."
+
+#: class.KCCounter_Admin.php:36
+msgid "Statistics"
+msgstr "Статистика"
+
+#: class.KCCounter.php:810
+msgid "KCC stat"
+msgstr "Статистика KCC"
+
+#: class.KCCounter.php:653 class.KCCounter.php:655
+msgid "clicks:"
+msgstr "кликов:"
+
+#: admin/admin-functions.php:16
+msgid "[edit_link] - URL to edit link in admin"
+msgstr "[edit_link] - УРЛ на редактирование ссылки"
+
+#: admin/admin-functions.php:15
+msgid "[link_description]"
+msgstr "[link_description] - описание файла"
+
+#: admin/admin-functions.php:14
+msgid "[link_date:d.M.Y] - date in \"d.M.Y\"  format"
+msgstr "[link_date:d.M.Y] - дата в формате \"d.M.Y\""
+
+#: admin/admin-functions.php:13
+msgid "[file_size]"
+msgstr "[file_size] - размер файла"
+
+#: admin/admin-functions.php:12
+msgid "[link_clicks] - number of clicks"
+msgstr "[link_clicks] - количество скачиваний"
+
+#: admin/admin-functions.php:11
+msgid "[link_title]"
+msgstr "[link_title] - заголовок файла"
+
+#: admin/admin-functions.php:10
+msgid "[link_name]"
+msgstr "[link_name] - название файла"
+
+#: admin/admin-functions.php:9
+msgid "[link_url] - URL to download"
+msgstr "[link_url] - УРЛ на закачку"
+
+#: admin/admin-functions.php:8
+msgid "[icon_url] - URL to file icon"
+msgstr "[icon_url] - URL на иконку файла"
+
+#: admin/admin-functions.php:7
+msgid "Shortcodes that can be used in template:"
+msgstr "Теги, которые можно использовать в шаблоне:"
+
+#: admin/options-page.php:418 class.KCCounter_Admin.php:35
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/options-page.php:416
+msgid "List"
+msgstr "Список"
+
+#. Plugin Name of the plugin
+#: admin/options-page.php:414
+msgid "Kama Click Counter"
+msgstr "Kama Click Counter"
+
+#: admin/options-page.php:411
+msgid "Link editing"
+msgstr "Редактирование ссылки"
+
+#: admin/options-page.php:395
+msgid "DELETE selected links"
+msgstr "УДАЛИТЬ выбранные ссылки"
+
+#: admin/options-page.php:389
+msgid "yes"
+msgstr "да"
+
+#: admin/options-page.php:372
+msgid "Edit"
+msgstr "Изменить"
+
+#: admin/options-page.php:370
+msgid "from post"
+msgstr "из записи"
+
+#: admin/options-page.php:369
+msgid "Find similar"
+msgstr "Найти аналоги"
+
+#: admin/options-page.php:364
+msgid "Link"
+msgstr "Ссылка"
+
+#: admin/options-page.php:341
+msgid "Last click"
+msgstr "Посл. клик"
+
+#: admin/options-page.php:340
+msgid "Added"
+msgstr "Добавлен"
+
+#: admin/options-page.php:339
+msgid "Attach"
+msgstr "Аттач"
+
+#: admin/options-page.php:337 admin/options-page.php:373
+msgid "Post"
+msgstr "Запись"
+
+#: admin/options-page.php:335
+msgid "Size"
+msgstr "Размер"
+
+#: admin/options-page.php:334
+msgid "Clicks/day"
+msgstr "Кликов/день"
+
+#: admin/options-page.php:333
+msgid "Clicks"
+msgstr "Клики"
+
+#: admin/options-page.php:332
+msgid "File"
+msgstr "Файл"
+
+#: admin/options-page.php:318
+msgid "Sort"
+msgstr "Сортировать"
+
+#: admin/options-page.php:298
+msgid "There"
+msgstr "Туда"
+
+#: admin/options-page.php:298
+msgid "Here"
+msgstr "Сюда"
+
+#: admin/options-page.php:288
+msgid "type any part of URL..."
+msgstr "впишите часть URL..."
+
+#: admin/options-page.php:286
+msgid "Clear out the filter:"
+msgstr "Очистить фильтр:"
+
+#: admin/options-page.php:218 admin/options-page.php:375
+msgid "Delete"
+msgstr "Удалить"
+
+#: admin/options-page.php:217
+msgid "Are you sure?"
+msgstr "Точно удалить?"
+
+#: admin/options-page.php:195
+msgid "Date added"
+msgstr "Дата добавления"
+
+#: admin/options-page.php:192
+msgid "Link to file"
+msgstr "Ссылка на Файл"
+
+#: admin/options-page.php:189
+msgid "File description"
+msgstr "Описание Файла"
+
+#: admin/options-page.php:186
+msgid "File title"
+msgstr "Заголовок Файла"
+
+#: admin/options-page.php:183
+msgid "File name"
+msgstr "Название Файла"
+
+#: admin/options-page.php:180
+msgid "File size"
+msgstr "Размер Файла"
+
+#: admin/options-page.php:178
+msgid "Clicks. Per day: %s"
+msgstr "Клики. В день: %s"
+
+#: admin/options-page.php:164
+msgid "Go back"
+msgstr "Вернуться назад"
+
+#: admin/options-page.php:152
+msgid "Link not found..."
+msgstr "Ссылка не найдена..."
+
+#: admin/options-page.php:134
+msgid "Sure to reset settings?"
+msgstr "Точно сбрасываем настройки на начальные?"
+
+#: admin/options-page.php:134
+msgid "Reset to defaults"
+msgstr "Сбросить настройки на начальные"
+
+#: admin/options-page.php:132 admin/options-page.php:214
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: admin/options-page.php:125
+msgid "Role names, except 'administrator' which will have access to KCC stat and links manage."
+msgstr "Название ролей, кроме администратора, которым доступно упраление плагином."
+
+#: admin/options-page.php:102
+msgid "show link on stat in Admin Bar"
+msgstr "выводить ссылку на статистику в Админ баре?"
+
+#: admin/options-page.php:97
+msgid "enable WordPress widget?"
+msgstr "включить виджет WordPress?"
+
+#: admin/options-page.php:92
+msgid "distinguish clicks on the same links, but from different posts. Uncheck in order to count clicks in different posts in one place."
+msgstr "различать ссылки на одинаковые файлы с разных постов. Уберите галочку, чтобы плагин считал клики с разных постов в одно место."
+
+#: admin/options-page.php:74
+msgid "as text after link"
+msgstr "текстом после ссылки"
+
+#: admin/options-page.php:73
+msgid "in the title attribute"
+msgstr "в аттрибуте title"
+
+#: admin/options-page.php:72
+msgid "don't show"
+msgstr "не показывать"
+
+#: admin/options-page.php:66
+msgid "Clicks on links with the same code <code>&lt;a class=&quot;count&quot; href=&quot;#&quot;&gt;link text&lt;/a&gt;</code> will be considered. Leave the field in order to disable this option - it save little server resourses."
+msgstr "Клики по ссылкам вида <code>&lt;a class=&quot;count&quot; href=&quot;#&quot;&gt;текст ссылки&lt;/a&gt;</code> в контенте записи будут считаться. Оставьте поле пустым, чтобы отключить опцию - маленькая экономия ресурсов."
+
+#: admin/options-page.php:64
+msgid "html class of the link of witch clicks we want to consider."
+msgstr "html class ссылки, клики на которую будут считаться."
+
+#: admin/options-page.php:59
+msgid "hide link URL with link ID. Works only for download block."
+msgstr "прятать URL ссылки под ID ссылки. Работает, только для блока загрузок."
+
+#: admin/options-page.php:49
+msgid "Default template (use as example):"
+msgstr "Шаблон по умолчанию (используйте как пример):"
+
+#: admin/options-page.php:43
+msgid "Downloads template. This code replaces the shortcode <code>[download url=\"URL\"]</code> in content:"
+msgstr "Шаблон загрузок: то на что будет заменен шоткод <code>[download url=\"URL\"]</code> в тексте:"

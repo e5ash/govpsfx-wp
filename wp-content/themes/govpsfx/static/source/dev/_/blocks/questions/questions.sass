@@ -1,0 +1,52 @@
+@import ../../sys/sass/vars
+
+.questions
+	margin-top: 70px
+	margin-bottom: 55px
+	&:last-of-type
+		margin-bottom: 0
+	&__title
+		margin-bottom: 30px
+	&__item
+		margin-bottom: 20px
+		&.--show
+			.questions
+				// &__body
+		&.--show
+			margin-bottom: 30px
+			.questions
+				&__head
+					padding-bottom: 10px
+				&__body
+					margin-bottom: 20px
+					
+	&__head
+		padding-bottom: 0px
+		span
+			transition: .3s
+			border-bottom: 1px dashed #fff
+			&:hover
+				// color: $yellow-l
+				border-color: transparent
+	// &__body
+
+	&.--yellow
+		.questions
+			&__head
+				span
+					color: $yellow
+					border-color: $yellow
+					&:hover
+						border-color: transparent
+
+	
+
+@media screen and (max-width: 1220px)
+	// .questions
+		
+@media screen and (max-width: 992px)
+	// .questions
+		
+@media screen and (max-width: 767px)
+	// .questions
+		

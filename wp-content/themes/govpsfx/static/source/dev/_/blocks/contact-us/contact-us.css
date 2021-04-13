@@ -1,0 +1,26 @@
+.contact-us {
+  width: 100%;
+  max-width: 970px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-us__wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 705px;
+}
+.contact-us__title {
+  margin-bottom: 20px;
+}
+.contact-us__write {
+  margin-top: 22px;
+  margin-right: auto;
+  min-width: 246px;
+}
+
+@media screen and (max-width: 540px) {
+  .contact-us__write {
+    width: 100%;
+  }
+}

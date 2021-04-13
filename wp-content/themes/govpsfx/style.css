@@ -1,0 +1,25 @@
+/*!
+Theme Name: govpsfx
+Theme URI: http://underscores.me/
+Author: Underscores.me
+*/
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate, .tablepress .sorting:after, .dataTables_wrapper caption {
+	display: none !important;
+}
+.tablepress tbody td, .tablepress thead th {
+	border: none !important;
+}
+p:empty:before {
+	display: none !important;
+}
+
+.t1 .kcc_block{letter-spacing: normal;display: block;padding:15px 10px;margin-bottom:20px;cursor:pointer;transition:background-color .4s}
+.t1 .kcc_block:before{clear:both}
+.t1 .kcc_block .kcc_link::first-letter {text-transform: uppercase;}
+.t1 .kcc_block .kcc_link{color: #ffb800;font-weight: 600;line-height: 18px; letter-spacing: 1px; text-decoration:none;display:block;font-size:20px;margin:10px}
+.t1 .kcc_block img{width: 62px !important;;height: auto !important;;float:left;margin:0 25px 0 5px;border:0!important;box-shadow:none!important}
+.t1 .kcc_block .description{color:#666}
+.t1 .kcc_block small{color:rgba(255,255,255,.7);font-size:17px;font-weight: 400;}
+.t1 .kcc_block b{display:block;clear:both}
+.t1 .kcc_block:hover{background:#141617}
+.t1 .kcc_block:hover a{text-decoration:none}

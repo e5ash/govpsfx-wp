@@ -1,0 +1,14 @@
+include ../../sys/pug/vars
+
+.b-links
+	.case
+		.b-links__list.grid
+			mixin b-links(link, title, desc)
+				a(href=link).b-links__item
+					.b-links__title.h4
+						span= title
+					.b-links__desc= desc
+
+			if blinks
+				each blink in blinks
+					+b-links(blink[0], blink[1], blink[2])

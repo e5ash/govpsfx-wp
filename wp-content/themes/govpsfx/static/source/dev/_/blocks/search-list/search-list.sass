@@ -1,0 +1,72 @@
+@import ../../sys/sass/vars
+
+.search-list
+	&__item
+		margin-bottom: 40px
+	&__name
+		font-weight: 700
+		line-height: 24px
+	&__text
+		line-height: 24px
+		margin-top: 5px
+		margin-bottom: 5px
+	// &__link
+	&__controls
+		margin-left: -6px
+		margin-right: -6px
+		a
+			color: #fff
+			margin-left: 6px
+			margin-right: 6px
+			&:hover
+				color: $yellow
+
+	&__false
+		margin-top: 40px
+		text-align: center
+
+
+	&__filters
+		margin-bottom: 40px
+	&__filter
+		&:nth-of-type(1)
+			width: 350px
+			margin-right: 84px
+		&-title
+			margin-bottom: 20px
+		&-search
+			position: relative
+			border: 1px solid #ffb800
+			border-radius: 4px
+		&-input
+			.input
+				&__area
+					font-size: 16px
+					font-weight: 700
+					height: 48px
+					padding-left: 15px
+					padding-right: 40px
+		&-btn
+			position: absolute
+			top: 50%
+			right: 12px
+			transform: translateY(-50%)
+
+	&__letters
+		li
+			margin-right: 6px
+		a
+			font-weight: 500
+			
+
+
+
+@media screen and (max-width: 1220px)
+	// .search-list
+		
+@media screen and (max-width: 992px)
+	// .search-list
+		
+@media screen and (max-width: 767px)
+	// .search-list
+		

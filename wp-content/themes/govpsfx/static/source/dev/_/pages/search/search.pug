@@ -1,0 +1,20 @@
+extends ../../templates/default
+block vars
+	-
+		title = "РЕЗУЛЬТАТЫ ПОИСКА ПО ЗАПРОСУ \"S\""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page.bg-wrap
+		.case
+			.page__head
+				+breadcrumbs()
+			.page__body
+				.page__title.h1 #[h1 Поиск по сайту]
+				+style('search-list', 'blocks')
+				include ../../blocks/search-list/search-list
+				
+		.page__bg-7.bg
+			img(src="_/uploads/scheme-bonuses-1.png" alt="")

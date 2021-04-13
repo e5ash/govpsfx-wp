@@ -1,0 +1,21 @@
+.videos__list {
+  grid: none/repeat(2, 1fr);
+  gap: 20px 30px;
+}
+.videos__list iframe {
+  width: 100% !important;
+  height: 275px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .videos__item iframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .videos__list {
+    grid: none/repeat(1, 1fr);
+  }
+}

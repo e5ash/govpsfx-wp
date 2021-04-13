@@ -1,0 +1,68 @@
+@import ../../sys/sass/vars
+
+.return
+	margin-top: 40px
+	padding-bottom: 120px
+	&.--lg
+		.return
+			&__wrap
+				max-width: 100%
+	&.--sm-pb
+		padding-bottom: 50px
+	&__wrap
+		width: 100%
+		max-width: 893px
+		margin-left: auto
+		margin-right: auto
+		border-radius: 5px
+		padding: 30px 30px 38px
+		background-color: rgba(15,16,17,.7)
+		
+	&__data
+		max-width: 380px
+	&__title
+		margin-bottom: 30px
+	&__btn
+		display: inline-flex
+		margin-top: 30px
+		&.btn
+			padding-left: 33px
+			padding-right: 33px
+	&__content
+		width: 100%
+		max-width: 416px
+		margin-left: auto
+		padding-left: 45px
+		padding-right: 15px
+		border-left: 1px solid rgba(255,255,255,.1)
+		p
+			margin-bottom: 23px
+			&:last-of-type
+				margin-bottom: 0
+		a
+			font-weight: 400
+@media screen and (max-width: 1220px)
+	// .return
+		
+@media screen and (max-width: 992px)
+	.return
+		margin-top: 40px
+		padding-bottom: 70px
+		&__data
+			max-width: 300px
+		&__content
+			max-width: 310px
+		
+@media screen and (max-width: 767px)
+	.return
+		padding-bottom: 60px
+		&__data
+			max-width: 100%
+		&__content
+			max-width: 100%
+			margin-top: 25px
+			padding-left: 0
+			border-left: none
+			p
+				padding-bottom: 0
+		

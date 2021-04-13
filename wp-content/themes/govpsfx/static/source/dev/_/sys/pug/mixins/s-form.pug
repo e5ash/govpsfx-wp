@@ -1,0 +1,18 @@
+mixin sForm(classes, ttle)
+	form(class=classes class="s-form" data-title=attributes.title)
+		.s-form__wrap
+			.s-form__list
+				.s-form__item(data-title="Имя")
+					.s-form__input.input.--name
+						.input__wrap
+							input.input__area(type="text" name="name" placeholder="Введите имя")
+				.s-form__item(data-title="Почта")
+					.s-form__input.input.--email
+						.input__wrap
+							input.input__area(type="text" name="email" placeholder="Введите почту")
+			button.s-form__btn.btn.--h-icon-yellow
+				<svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.0003 13.668L12.0123 11.68L13.9163 9.776L15.2043 8.684L15.1763 8.572L12.7963 8.712H0.560328V5.744H12.7963L15.1763 5.884L15.2043 5.772L13.9163 4.68L12.0123 2.776L14.0003 0.787998L20.4403 7.228L14.0003 13.668Z" fill="#FFB800"></path></svg>
+		.s-form__status #[div]
+		.s-form__count
+			.s-form__count-current
+			.s-form__count-total

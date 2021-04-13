@@ -1,0 +1,89 @@
+@import ../../sys/sass/vars
+
+.textarea
+	&__label
+		font-size: 15px
+		font-weight: 700
+		margin-bottom: 18px
+	&__wrap
+		position: relative
+	&__area
+		width: 100%
+		font-family: $ffMain
+		color: $black
+		resize: none
+		&::placeholder
+			color: $black
+		&.--lg
+			font-size: 18px
+			font-weight: 700
+	&__desc
+		position: absolute
+		top: 50%
+		color: #4d4d4d
+		transform: translateY(-50%)
+	&.--b-gray
+		.textarea
+			&__area
+				font-size: 15px
+				border: 1px solid rgba(201, 201, 201, 0.8)
+	&.--b-white
+		.textarea
+			&__area
+				border: 1px solid #fff
+	&.--b-gray
+		.textarea
+			&__area
+				font-size: 15px
+				border: 1px solid rgba(201, 201, 201, 0.8)
+	&.--b-gray-l
+		.textarea
+			&__area
+				border: 1px solid rgba(201, 201, 201, 0.3)
+	&.--c-gray
+		.textarea
+			&__area
+				color: #212529
+				&::placeholder
+					opacity: .7
+					color: #212529
+	&.--c-white
+		.textarea
+			&__area
+				color: #fff
+				&::placeholder
+					opacity: .7
+					color: #fff
+				
+		
+	&.--md
+		.textarea
+			&__area
+				border-radius: 4px
+				height: 210px
+				padding: 17px 20px
+			&__desc
+				font-size: 15px
+				right: 14px
+	&.--lg
+		.textarea
+			&__area
+				border-radius: 4px
+				padding: 15px
+				height: 210px
+			&__label
+				font-size: 16px
+				font-weight: 600
+				margin-bottom: 6px
+				color: #fff
+	&.--xlg
+		.textarea
+			&__area
+				border-radius: 4px
+				padding: 15px 20px
+				height: 210px
+	&.--fz-md
+		.textarea
+			&__area
+				font-size: 16px
+		

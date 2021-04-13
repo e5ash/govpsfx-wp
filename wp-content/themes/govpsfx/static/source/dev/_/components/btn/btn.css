@@ -1,0 +1,102 @@
+.btn {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  transition: 0.3s;
+  outline: none;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+.btn svg + span {
+  margin-left: 7px;
+}
+.btn span + svg {
+  margin-left: 7px;
+}
+.btn.--sm {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  min-height: 48px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.btn.--lg {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  min-height: 61px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.btn.--xlg {
+  min-height: 82px;
+  padding: 16px 22px 19px 22px;
+  text-align: left;
+}
+.btn.--more {
+  justify-content: flex-start;
+  text-transform: none;
+}
+.btn.--more .btn__title {
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+.btn.--more .btn__desc {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn.--more .btn__icon {
+  margin-left: 25px;
+}
+.btn.--bg-yellow {
+  color: #212529;
+  background-color: #ffb800;
+}
+.btn.--bg-yellow:hover {
+  background-color: #ffd600;
+}
+.btn.--b-yellow {
+  color: #ffb800;
+  border: 1px solid #ffb800;
+}
+.btn.--b-yellow:hover {
+  color: #ffd600;
+  border-color: #ffd600;
+}
+.btn.--b-white {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.--b-white:hover {
+  color: #ffd600;
+  border-color: #ffd600;
+}
+.btn.--bb {
+  box-shadow: 0 10px 24px rgba(255, 184, 0, 0.3), 0 4px 0 #d09600;
+}
+.btn.--h-icon-yellow:hover path[fill] {
+  fill: #ffd600;
+}
+.btn.--radius {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn.--more .btn__desc {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,158 @@
+.rate {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+.rate.--pt0 {
+  padding-top: 30px;
+}
+.rate__content {
+  max-width: 580px;
+}
+.rate__title {
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+.rate__text {
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+.rate__form {
+  max-width: 355px;
+}
+.rate__inner {
+  margin-left: auto;
+  width: 100%;
+  max-width: 580px;
+}
+.rate__slider {
+  margin-right: -1580px;
+}
+.rate__item {
+  display: flex;
+  flex-direction: column;
+  width: 506px;
+  height: auto;
+  padding: 20px;
+  height: 345px;
+  color: #fff;
+  font-weight: 400;
+}
+.rate__item:hover {
+  color: #fff;
+}
+.rate__logo {
+  width: 109px;
+}
+.rate__img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.rate__img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, black 20%, rgba(255, 255, 255, 0) 60%);
+}
+.rate__data {
+  margin-top: auto;
+}
+.rate__date {
+  opacity: 0.7;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.rate__desc {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.rate__watch {
+  display: flex;
+  align-items: center;
+}
+.rate__watch var {
+  font-size: 14px;
+  line-height: 15px;
+  margin-left: 3px;
+}
+.rate__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 35px;
+}
+.rate__arrows {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 75px;
+}
+.rate__arrow {
+  position: relative;
+}
+.rate__arrow.--prev, .rate__arrow.--next {
+  left: 0;
+  top: 0;
+}
+.rate__arrow.--next {
+  margin-left: 10px;
+}
+.rate__scheme-1 {
+  left: 25px;
+  bottom: -101px;
+}
+.rate__scheme-2 {
+  left: 464px;
+  bottom: -192px;
+}
+
+@media screen and (max-width: 1340px) {
+  .rate__content {
+    max-width: 355px;
+  }
+  .rate__inner {
+    max-width: 505px;
+  }
+  .rate__arrows {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .rate {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .rate__content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .rate__text {
+    max-width: 585px;
+  }
+  .rate__inner {
+    max-width: 100%;
+  }
+  .rate__slider {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .rate {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rate__more {
+    display: none;
+  }
+  .rate__arrows {
+    margin-right: auto;
+  }
+}

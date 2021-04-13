@@ -1,0 +1,51 @@
+include ../../sys/pug/vars
+
+.combo-offer
+	.case.--sm
+		.combo-offer__title.h4 Собери Форекс-комбо!
+		.combo-offer__desc Выберите одно из наших комбо-предложение и получите бонус на торговый счет + бесплатный VPS на 6 терминалов + торговый робот на выбор из нашей коллекции, насчитывающей более 70 форекс-советников.
+		.combo-offer__slider.swiper-container.--has-pagination
+			+style('bonuses', 'blocks')
+			-
+				bonusesListClass = 'swiper-wrapper'
+				bonusesItemClass = 'swiper-slide'
+			include ../bonuses/bonuses-list
+			.combo-offer__pagination.swiper-pagination
+			.combo-offer__arrows.arrows
+				.combo-offer__arrow.swiper-button-prev.btn.arrow.--bg-yellow.--radius.--prev
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+				.combo-offer__arrow.swiper-button-next.btn.arrow.--bg-yellow.--radius.--next
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+
+
+
+script.
+	document.addEventListener('DOMContentLoaded', ()=>{
+		var comboList = new Swiper('.combo-offer__slider', {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+				}, 
+				993: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+				},
+				1100: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+				}
+			}
+		}); 
+	});

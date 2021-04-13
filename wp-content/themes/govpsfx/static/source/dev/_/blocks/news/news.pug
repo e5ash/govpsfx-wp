@@ -1,0 +1,130 @@
+include ../../sys/pug/vars
+
+-
+	news = [
+		[
+			'https://govpsfx.com/wp-content/uploads/2021/02/amazon-digital-currency-mexico-460x344.jpg',
+			'8 февраля 2021',
+			'Еженедельная форекс-аналитика и прогноз цен: AUDUSD, S&amp;P500, Exxon',
+			'9'
+		],
+		[
+			'https://govpsfx.com/wp-content/uploads/2021/02/food-prices-rising-460x344.jpg',
+			'8 февраля 2021',
+			'Еженедельная форекс-аналитика и прогноз цен: EURUSD, XAUUSD, BRENT',
+			'10'
+		],
+		[
+			 
+			'https://govpsfx.com/wp-content/uploads/2021/02/silver-rapid-growth-460x344.jpg',
+			'4 февраля 2021',
+			'Рынок серебра стремительно бьет рекорды',
+			'14'
+		],
+		[
+			 
+			'https://govpsfx.com/wp-content/uploads/2021/02/visa-support-cryptocurrencies-460x344.jpg',
+			'2 февраля 2021',
+			'Платежная система VISA поддержит криптовалюты',
+			'14'
+		],
+		[
+			'https://govpsfx.com/wp-content/uploads/2020/03/analitika-main-460x344.jpg',
+			'1 февраля 2021',
+			'Еженедельная форекс-аналитика и прогноз цен: USDCNH, S&amp;P500, DAX30',
+			'22'
+		],
+		[
+			'https://govpsfx.com/wp-content/uploads/2020/03/analitika-main-460x344.jpg',
+			'1 февраля 2021',
+			'Еженедельная форекс-аналитика и прогноз цен: EURUSD, XAUUSD, BRENT',
+			'20'
+		]
+
+	]
+
+mixin newsItem(img, date, text, watch)
+	a.news__item.bg-wrap.--sm(href="news-item.html")
+		.news__logo
+			img(src="_/uploads/logo-govpsfx-black-xs.png" alt="")
+		.news__data
+			.news__date= date
+			.news__desc.t1=text
+			.news__watch
+				img(src="_/uploads/icons/eye.png" alt="")
+				var=watch
+		.news__img.bg
+			img(src=img alt="")
+
+
+.news.tabs
+	.news__nav.tabs-links
+		a.news__nav-item.tabs-link.--current(href="#news-all") все
+		a.news__nav-item.tabs-link(href="#news-forex") Аналитика Форекс
+		a.news__nav-item.tabs-link(href="#news-finance") Финансовые новости
+	.news__tabs-list
+		.news__tab.tabs-item#news-all
+			.news__list.row
+				.news__item.--lg
+					a.news__img-wrap.bg-wrap(href="news-item.html")
+						.news__img.bg
+							img(src="https://govpsfx.com/wp-content/uploads/2021/03/telegram-dollar-denominated-bonds-620x325.jpg" alt="")
+						.news__logo
+							img(src="_/uploads/logo-govpsfx-black-xs.png" alt="")
+						.news__watch
+							img(src="_/uploads/icons/eye.png" alt="")
+							var 7
+					.news__data
+						.news__date 18 МАРТА 2021
+						.news__title.h4 Группа Telegram вышла на рынок IPO
+						.news__text.t1
+							p Группа Telegram взяла в долг 1 миллиард долларов Группа Telegram, владеющая одноименным популярным мессенджером, провела первое размещение на...
+
+				if news
+					each newsItem in news
+						+newsItem(newsItem[0], newsItem[1], newsItem[2], newsItem[3])
+
+		.news__tab.tabs-item#news-forex
+			.news__list.row
+				.news__item.--lg
+					a.news__img-wrap.bg-wrap(href="news-item.html")
+						.news__img.bg
+							img(src="https://govpsfx.com/wp-content/uploads/2021/03/telegram-dollar-denominated-bonds-620x325.jpg" alt="")
+						.news__logo
+							img(src="_/uploads/logo-govpsfx-black-xs.png" alt="")
+						.news__watch
+							img(src="_/uploads/icons/eye.png" alt="")
+							var 7
+					.news__data
+						.news__date 18 МАРТА 2021
+						.news__title.h4 Группа Telegram вышла на рынок IPO
+						.news__text.t1
+							p Группа Telegram взяла в долг 1 миллиард долларов Группа Telegram, владеющая одноименным популярным мессенджером, провела первое размещение на...
+
+				if news
+					each newsItem in news
+						+newsItem(newsItem[0], newsItem[1], newsItem[2], newsItem[3])
+
+		.news__tab.tabs-item#news-finance
+			.news__list.row
+				.news__item.--lg
+					a.news__img-wrap.bg-wrap(href="news-item.html")
+						.news__img.bg
+							img(src="https://govpsfx.com/wp-content/uploads/2021/03/telegram-dollar-denominated-bonds-620x325.jpg" alt="")
+						.news__logo
+							img(src="_/uploads/logo-govpsfx-black-xs.png" alt="")
+						.news__watch
+							img(src="_/uploads/icons/eye.png" alt="")
+							var 7
+					.news__data
+						.news__date 18 МАРТА 2021
+						.news__title.h4 Группа Telegram вышла на рынок IPO
+						.news__text.t1
+							p Группа Telegram взяла в долг 1 миллиард долларов Группа Telegram, владеющая одноименным популярным мессенджером, провела первое размещение на...
+
+				if news
+					each newsItem in news
+						+newsItem(newsItem[0], newsItem[1], newsItem[2], newsItem[3])
+				
+	
+			

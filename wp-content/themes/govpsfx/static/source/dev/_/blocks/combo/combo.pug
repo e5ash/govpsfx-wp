@@ -1,0 +1,50 @@
+include ../../sys/pug/vars
+
+.combo
+	.case
+		.combo__title.h2.tac #[h2 Собери Форекс-Комбо]
+		.combo__subtitle.tac Бонус + Бесплатный VPS + Торговый Робот
+		.combo__slider.swiper-container.--has-pagination
+			.combo__list.swiper-wrapper
+				mixin comboItem(text, link, img)
+					.combo__item.row.swiper-slide
+						.combo__img-wrap.bg-wrap
+							.combo__img.bg
+								img(src=img alt="")
+						.combo__content
+							.combo__text=text
+							.combo__grp.btn-grp
+								a.combo__btn.btn.--lg.--b-white.--radius(href="") Получить бонус
+								.combo__link.link #[a(href=link) Все бонусы →]
+				-
+					combo = [
+						['Бонус $75 от брокера NPBFX с возможностью вывода прибыли без отработки и дополнительных условий, бесплатный VPS-сервер от компании GoVPSFX без ежемесячных платежей и скрытых комиссий, а также торговый робот на выбор из нашей коллекции, насчитывающей более 70 форекс-советников на любой вкус и цвет.', 'bonus-npbfx.html', '_/uploads/combo/combo-1.png'],
+						['Бонус $50 от брокера InstaForex с возможностью вывода прибыли без отработки и дополнительных условий, бесплатный VPS-сервер от компании GoVPSFX без ежемесячных платежей и скрытых комиссий, а также торговый робот на выбор из нашей коллекции, насчитывающей более 70 форекс-советников на любой вкус и цвет.', 'bonus-instaforex.html', '_/uploads/combo/combo-2.png'],
+						['Бонус $40 от брокера RoboForex с возможностью вывода прибыли без отработки и дополнительных условий, бесплатный VPS-сервер от компании GoVPSFX без ежемесячных платежей и скрытых комиссий, а также торговый робот на выбор из нашей коллекции, насчитывающей более 70 форекс-советников на любой вкус и цвет.', 'bonus-roboforex.html', '_/uploads/combo/combo-3.png'],
+						['Бонус $25 от брокера Weltrade с возможностью вывода прибыли без отработки и дополнительных условий, бесплатный VPS-сервер от компании GoVPSFX без ежемесячных платежей и скрытых комиссий, а также торговый робот на выбор из нашей коллекции, насчитывающей более 70 форекс-советников на любой вкус и цвет.', 'bonus-weltrade.html', '_/uploads/combo/combo-4.png'],
+						['Бонус $20 от брокера World Forex с возможностью вывода прибыли без отработки и дополнительных условий, бесплатный VPS-сервер от компании GoVPSFX без ежемесячных платежей и скрытых комиссий, а также торговый робот на выбор из нашей коллекции, насчитывающей более 70 форекс-советников на любой вкус и цвет.', 'bonus-wforex.html', '_/uploads/combo/combo-5.png']
+					]
+				if combo
+					each comboItem in combo
+						+comboItem(comboItem[0], comboItem[1], comboItem[2])
+			.combo__pagination.swiper-pagination
+			.combo__arrows.arrows
+				.combo__arrow.swiper-button-prev.btn.arrow.--bg-yellow.--radius.--prev
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+				.combo__arrow.swiper-button-next.btn.arrow.--bg-yellow.--radius.--next
+					<svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5451 17L12.5437 15.029L16.0972 11.4976L18.1394 9.77295L18.0986 9.64976L14.1366 9.89614H0L0 7.10386H14.1366L18.0986 7.35024L18.1394 7.22705L16.0972 5.50242L12.5437 1.97101L14.5451 0L23 8.5L14.5451 17Z" fill="#0F1011"/></svg>
+
+script.
+	document.addEventListener('DOMContentLoaded', ()=>{
+		var priceList = new Swiper('.combo__slider', {
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		}); 
+	});

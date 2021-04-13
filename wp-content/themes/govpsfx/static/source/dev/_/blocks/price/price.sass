@@ -1,0 +1,80 @@
+@import ../../sys/sass/vars
+
+.price
+	overflow: hidden
+	&__title
+		margin-bottom: 20px
+	&__subtitle
+		margin-bottom: 50px
+	&__slider
+		width: 100%
+		padding: 0 37px
+		max-width: 967px
+		margin-left: auto
+		margin-right: auto
+		overflow: visible
+		&.--lg
+			padding-left: 0
+			padding-right: 0
+			.arrow
+				&.--prev
+					left: -78px
+				&.--next
+					right: -78px
+			
+	&__item
+		opacity: 0.5
+		padding: 28px 30px 43px
+		border-radius: 5px
+		background: rgba(15,16,17,.5)
+		transition: .3s
+		&.swiper-slide-active, &.swiper-slide-next
+			opacity: 1
+	&__data
+		margin-bottom: 35px
+		.data
+			&__name
+				text-transform: uppercase
+	&__name
+		margin-bottom: 30px
+	&__wrap
+		margin-bottom: 45px
+	&__btn
+		margin-top: auto
+	&__arrow
+		&.--prev
+			// display: none
+	&__scheme-1
+		top: 345px
+		left: 50%
+		transform: translateX(-50%)
+		
+
+@media screen and (max-width: 1220px)
+	// .price
+
+@media screen and (max-width: 1040px)
+	.price
+		&__arrow
+			&.--prev
+				left: 10px
+			&.--next
+				right: 10px
+				
+			
+@media screen and (max-width: 992px)
+	// .price
+		
+@media screen and (max-width: 767px)
+	.price
+		&__slider
+			padding-left: 0
+			padding-right: 0
+		&__name
+			margin-bottom: 25px
+		&__wrap
+			margin-bottom: 25px
+		&__arrow
+			display: none
+			
+		

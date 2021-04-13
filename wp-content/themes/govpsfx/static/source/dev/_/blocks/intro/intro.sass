@@ -1,0 +1,94 @@
+@import ../../sys/sass/vars
+
+.intro
+	padding-top: 90px
+	min-height: 640px
+	&__content
+		width: 100%
+		max-width: 435px
+	&__title
+		margin-bottom: 30px
+	&__text
+		margin-bottom: 50px
+	&__btn
+		display: inline-flex
+		margin-right: auto
+		margin-bottom: 30px
+	&__img-wrap
+		position: absolute
+		top: -259px
+		right: -15px
+		
+	&__ellipse
+		z-index: -1
+		position: absolute
+		width: 858px
+		height: 846px
+		top: 0
+		right: -15px
+		img
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+	&__scheme-1
+		left: 0
+		top: 353px
+	&__scheme-2
+		top: 40px
+		right: 0
+
+		
+
+@media screen and (max-width: 1360px)
+	.intro
+		&__img-wrap
+			right: -55px
+			
+		
+@media screen and (max-width: 992px)
+	.intro
+		padding-top: 0
+		&__content
+			padding-top: 90px
+		&__img-wrap
+			top: 0
+		&__img
+			width: 360px
+		&__ellipse
+			top: -216px
+			left: 50%
+			right: auto
+			transform: translateX(-50%)
+			
+			
+		
+@media screen and (max-width: 767px)
+	.intro
+		padding-bottom: 60px
+		&__wrap
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+		
+		&__content
+			order: 2
+			padding-top: 15px
+			text-align: center
+
+		&__title
+			margin-bottom: 20px
+
+		&__text
+			margin-bottom: 20px
+
+		&__img-wrap
+			position: relative
+			right: 0
+		&__img
+			width: 100%
+			max-width: 360px
+			margin-left: auto
+			margin-right: auto
+			
+		

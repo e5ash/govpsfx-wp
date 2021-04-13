@@ -1,0 +1,168 @@
+//-intro 
++style('intro', 'blocks')
+include ../../blocks/intro/intro
+
+//-server 
++style('server', 'blocks')
+include ../../blocks/server/server
+
+//-ping 
++style('ping', 'blocks')
+include ../../blocks/ping/ping
+
+//-price 
++style('price', 'blocks')
+include ../../blocks/price/price
+
+//-return 
++style('return', 'blocks')
+include ../../blocks/return/return
+
+//-combo 
++style('combo', 'blocks')
+include ../../blocks/combo/combo
+
+//-reviews 
++style('reviews', 'blocks')
+include ../../blocks/reviews/reviews
+
+//-popular 
++style('popular', 'blocks')
+include ../../blocks/popular/popular
+
+//-we 
++style('we', 'blocks')
+include ../../blocks/we/we
+
+//-rate 
++style('rate', 'blocks')
+include ../../blocks/rate/rate
+
+//- how 
++style('how', 'blocks')
+include ../../blocks/how/how
+
+//- experts 
++style('experts', 'blocks')
+include ../../blocks/experts/experts
+
+//- brokers 
++style('brokers', 'blocks')
+include ../../blocks/brokers/brokers
+
+//- bonuses 
++style('bonuses', 'blocks')
+include ../../blocks/bonuses/bonuses
+
+//- contacts 
++style('contacts', 'blocks')
+include ../../blocks/contacts/contacts
+
+//- contact-us 
++style('contact-us', 'blocks')
+include ../../blocks/contact-us/contact-us
+
+//- need-help 
++style('need-help', 'blocks')
+include ../../blocks/need-help/need-help
+
+//- test 
++style('test', 'blocks')
+include ../../blocks/test/test
+
+//- questions 
++style('questions', 'blocks')
+include ../../blocks/questions/questions
+
+//- 404 
++style('404', 'blocks')
+include ../../blocks/404/404
+
+//- instr-vps 
++style('instr-vps', 'blocks')
+include ../../blocks/instr-vps/instr-vps
+
+//- videos 
++style('videos', 'blocks')
+include ../../blocks/videos/videos
+
+//- course 
++style('course', 'blocks')
+include ../../blocks/course/course
+
+//- faq 
++style('faq', 'blocks')
+include ../../blocks/faq/faq
+
+//- get-bonus 
++style('get-bonus', 'blocks')
+include ../../blocks/get-bonus/get-bonus
+
+//- combo-offer 
++style('combo-offer', 'blocks')
+include ../../blocks/combo-offer/combo-offer
+
+//- news 
++style('news', 'blocks')
+include ../../blocks/news/news
+
+//- expert 
++style('expert', 'blocks')
+include ../../blocks/expert/expert
+
+//- get-free 
++style('get-free', 'blocks')
+include ../../blocks/get-free/get-free
+
+//- modals 
++style('modals', 'blocks')
+include ../../blocks/modals/modals
+
+//- broker 
++style('broker', 'blocks')
+include ../../blocks/broker/broker
+
+//- logo-list 
++style('logo-list', 'blocks')
+include ../../blocks/logo-list/logo-list
+
+//- commets 
++style('commets', 'blocks')
+include ../../blocks/commets/commets
+
+//- comments 
++style('comments', 'blocks')
+include ../../blocks/comments/comments
+
+//- pm 
++style('pm', 'blocks')
+include ../../blocks/pm/pm
+
+//- conclusion 
++style('conclusion', 'blocks')
+include ../../blocks/conclusion/conclusion
+
+//- rebate 
++style('rebate', 'blocks')
+include ../../blocks/rebate/rebate
+
+//- contest 
++style('contest', 'blocks')
+include ../../blocks/contest/contest
+
+//- winnerts 
++style('winnerts', 'blocks')
+include ../../blocks/winnerts/winnerts
+
+//- winners 
++style('winners', 'blocks')
+include ../../blocks/winners/winners
+
+//- participate 
++style('participate', 'blocks')
+include ../../blocks/participate/participate
+
+//- search 
++style('search', 'blocks')
+include ../../blocks/search/search
+

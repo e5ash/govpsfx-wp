@@ -1,0 +1,26 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Форекс советники"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page.bg-wrap
+		.case
+			.page__head
+				+breadcrumbs()
+			.page__body
+				+style('experts', 'blocks')
+				include ../../blocks/experts/experts
+				+script('experts', 'blocks')
+				
+		.page__bg-1.bg
+			img(src="_/uploads/scheme-advisors-1.png" alt="")
+
+		.page__bg-2.bg
+			img(src="_/uploads/scheme-advisors-2.png" alt="")
+
+		.page__bg-3.bg
+			img(src="_/uploads/scheme-advisors-3.png" alt="")

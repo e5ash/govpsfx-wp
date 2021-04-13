@@ -1,0 +1,80 @@
+@import ../../sys/sass/vars
+
+.brokers
+	margin-top: 22px
+	&__tabs-nav
+		margin-bottom: 26px
+	&__search
+		max-width: 380px
+		margin-bottom: 23px
+
+
+.filter
+	margin-left: -5px
+	margin-right: -5px
+	margin-bottom: 23px
+	&__item
+		width: calc(21% - 10px)
+		margin-left: 5px
+		margin-right: 5px
+		padding: 11px 14px 0
+		border-radius: 5px
+		padding-top: 25px
+		box-shadow: 0 2px 6px rgb(0 0 0 / 70%)
+		background-color: #16191A
+		margin-bottom: 10px
+	&__controls
+		width: calc(16% - 10px)
+		margin-left: 5px
+		margin-right: 5px
+		margin-bottom: 10px
+	&__reset, &__show
+		width: 100%
+	&__show
+		margin-bottom: 8px
+	&__name
+		color: #959595
+	&__range
+		margin-top: 25px
+		margin-bottom: 15px
+	&__checks
+		padding-top: 11px
+	&__check
+		margin-right: 25px
+		&:last-of-type
+			margin-right: 0
+		
+		
+
+@media screen and (max-width: 1340px)
+	.filter
+		&__item
+			width: calc(33% - 10px)
+			padding: 10px 20px
+		&__controls
+			min-width: 190px
+		
+@media screen and (max-width: 992px)
+	.brokers
+		&__search
+			max-width: 100%
+	.filter
+		&__item
+			width: calc(50% - 10px)
+		&__controls
+			// width: 50%
+			min-width: 100%
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 0
+	// .brokers
+		
+@media screen and (max-width: 767px)
+	// .brokers
+		
+	.filter
+		&__item
+			width: calc(100% - 10px)
+		&__controls
+			width: 100%
+			min-width: 1px
